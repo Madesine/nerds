@@ -45,64 +45,70 @@
 
     <main>
       <form action="#" oninput="to_range.value=cost.value" class="filter">
-        <h2>Стоимость:</h2>
-        <input
-          type="range"
-          name="cost"
-          id="cost"
-          min="0"
-          max="20000"
-          step="100"
-        />
-        <p>
-          <label for="from-range">От</label>
-          <output name="from_range" id="from-range">0</output>
+        <section class="price-in-range">
+					<h2>Стоимость:</h2>
+        	<input
+        	  type="range"
+        	  name="cost"
+        	  id="cost"
+        	  min="0"
+        	  max="20000"
+        	  step="100"
+        	/>
+        	<p>
+        	  <label for="from-range">От</label>
+        	  <output name="from_range" id="from-range">0</output>
 
-          <label for="to-range">До</label>
-          <output name="to_range" id="to-range"></output>
-        </p>
+        	  <label for="to-range">До</label>
+        	  <output name="to_range" id="to-range"></output>
+        	</p>
+				</section>
 
-        <h2>Сетка:</h2>
-        <p>
-          <input
-            type="radio"
-            name="grid"
-            id="grid-adaptive"
-            value="adaptive"
-            checked
-          />
-          <label for="grid-adaptive">Адаптивная</label>
-        </p>
-        <p>
-          <input type="radio" name="grid" id="grid-fix" value="fix" />
-          <label for="grid-fix">Фиксированная</label>
-        </p>
-        <p>
-          <input type="radio" name="grid" id="grid-rubber" value="rubber" />
-          <label for="grid-rubber">Резиновая</label>
-        </p>
-
-        <h2>Особенности:</h2>
-        <p>
-          <input type="checkbox" name="slider" id="features-slider" />
-          <label for="features-slider">Слайдер</label>
-        </p>
-        <p>
-          <input type="checkbox" name="block" id="features-block" />
-          <label for="features-block">Блок преимуществ</label>
-        </p>
-        <p>
-          <input type="checkbox" name="news" id="features-news" />
-          <label for="features-news">Новости</label>
-        </p>
-        <p>
-          <input type="checkbox" name="gallery" id="features-gallery" />
-          <label for="features-gallery">Галерея</label>
-        </p>
-        <p>
-          <input type="checkbox" name="basket" id="features-basket" />
-          <label for="features-basket">Корзина</label>
-        </p>
+        <section class="grid">
+					<h2>Сетка:</h2>
+        	<p>
+        	  <input
+        	    type="radio"
+        	    name="grid"
+        	    id="grid-adaptive"
+        	    value="adaptive"
+        	    checked
+        	  />
+        	  <label for="grid-adaptive">Адаптивная</label>
+        	</p>
+        	<p>
+        	  <input type="radio" name="grid" id="grid-fix" value="fix" />
+        	  <label for="grid-fix">Фиксированная</label>
+        	</p>
+        	<p>
+        	  <input type="radio" name="grid" id="grid-rubber" value="rubber" />
+        	  <label for="grid-rubber">Резиновая</label>
+					</p>
+				</section>
+				
+        <section class="features">
+          <h2>Особенности:</h2>
+          <p>
+            <input type="checkbox" name="slider" id="features-slider" />
+            <label for="features-slider">Слайдер</label>
+          </p>
+          <p>
+            <input type="checkbox" name="block" id="features-block" />
+            <label for="features-block">Блок преимуществ</label>
+          </p>
+          <p>
+            <input type="checkbox" name="news" id="features-news" />
+            <label for="features-news">Новости</label>
+          </p>
+          <p>
+            <input type="checkbox" name="gallery" id="features-gallery" />
+            <label for="features-gallery">Галерея</label>
+          </p>
+          <p>
+            <input type="checkbox" name="basket" id="features-basket" />
+            <label for="features-basket">Корзина</label>
+          </p>
+        </section>
 
         <input type="submit" value="Показать" />
       </form>
@@ -256,8 +262,8 @@
           <h3 class="visually-hidden">Контактная информация</h3>
           <p>NЁRDS DESIGN STUDIO</p>
           <p>
-            191186, Санкт-Петербург,<br/>
-            ул. Б. Конюшенная, д. 19/8 <br/>
+            191186, Санкт-Петербург,<br />
+            ул. Б. Конюшенная, д. 19/8 <br />
             тел. +7 (812)275-75-75
           </p>
           <a href="#" class="text-us-form">НАПИШИТЕ НАМ</a>
@@ -289,7 +295,7 @@
           </li>
         </ul>
         <p>
-          <span>Давайте дружить, это выгодно!</span><br/>Скидка 10% для друзей
+          <span>Давайте дружить, это выгодно!</span><br />Скидка 10% для друзей
           из социальных сетей.
         </p>
       </div>
@@ -328,8 +334,8 @@
           rows="7"
           placeholder="В свободной форме"
         ></textarea>
-			</p>
-			
+      </p>
+
       <input type="submit" value="Отправить" />
 
       <input

@@ -29,10 +29,10 @@ header {
   font-size: 16px;
   line-height: 30px;
 
-	text-decoration: none;
-	text-transform: uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
 
-	color: black;
+  color: black;
 }
 .header-navigation a:hover,
 .header-navigation a:focus,
@@ -45,158 +45,236 @@ header {
   color: #a6a6a6;
 }
 
-.carousel{
-	background-color: #eeeeee;
+.carousel {
+  background-color: #eeeeee;
 }
-.carousel-paragraph span{
-	font-family: "RobotoMedium", Helvetica, sans-serif;
-	font-size: 55px;
-	line-height: 55px;
+.carousel-paragraph span {
+  font-family: "RobotoMedium", Helvetica, sans-serif;
+  font-size: 55px;
+  line-height: 55px;
 
-	color: black;
+  color: black;
 }
 
-.button{
-	font-family:"RobotoMedium", Helvetica, sans-serif;
-	line-height: 18px;
+.button {
+  font-family: "RobotoMedium", Helvetica, sans-serif;
+  line-height: 18px;
 
-	text-decoration: none;
-	text-transform: uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
 
-	color: white;
-	background-color: #fb565a;
+  color: white;
+  background-color: #fb565a;
 }
 .button:hover,
-.button:focus{
-	background-color: #e74246;
+.button:focus {
+  background-color: #e74246;
 }
-.button:active{
-	background-color: #d7373b;
-	color: rgba(255,255,255, .3);
-}
-
-.order-sheet h2{
-	font-family: "RobotoBold", Helvetica, sans-serif;
-	font-size: 24px;
-	line-height: 30px;
-
-	color: black;
+.button:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.order-application a{
-	background-color: #00ca74;
+.order-sheet h2 {
+  font-family: "RobotoBold", Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: black;
+}
+
+.order-application a {
+  background-color: #00ca74;
 }
 .order-application a:hover,
-.order-application a:focus{
-	background-color: #00bc6c;
+.order-application a:focus {
+  background-color: #00bc6c;
 }
-.order-application a:active{
-	background-color: #00aa62;
+.order-application a:active {
+  background-color: #00aa62;
 }
 
-.order-presentation a{
-	background-color: #efc84a;
+.order-presentation a {
+  background-color: #efc84a;
 }
 .order-presentation a:hover,
-.order-presentation a:focus{
-	background-color: #eab534;
+.order-presentation a:focus {
+  background-color: #eab534;
 }
-.order-presentation a:active{
-	background-color: #e5a722;
+.order-presentation a:active {
+  background-color: #e5a722;
 }
 
-.about-us-paragraph span{
-	font-family:"RobotoMedium", Helvetica, sans-serif;
-	font-size: 45px;
-	line-height: 45px;
+.about-us-paragraph span {
+  font-family: "RobotoMedium", Helvetica, sans-serif;
+  font-size: 45px;
+  line-height: 45px;
 
-	color: black;
+  color: black;
 }
 /* Wrong uppercase HERE */
 .about-us-offers h3,
-.about-us-advantages h3{
-	font-family:"RobotoBold", Helvetica, sans-serif;
-	
-	text-transform: uppercase;
+.about-us-advantages h3 {
+  font-family: "RobotoBold", Helvetica, sans-serif;
 
-	color: black;
-}
-.about-us-advantages ul{
-	list-style: none;
-}
-.about-us-advantages span{
-	font-family:"RobotoBold", Helvetica, sans-serif;
-	font-size: 45px;
-	line-height: 10.06px;
+  text-transform: uppercase;
 
-	color: black;
+  color: black;
 }
-.about-us-advantages p{
-	line-height: 18px;
+.about-us-advantages ul {
+  list-style: none;
+}
+.about-us-advantages span {
+  font-family: "RobotoBold", Helvetica, sans-serif;
+  font-size: 45px;
+  line-height: 10.06px;
+
+  color: black;
+}
+.about-us-advantages p {
+  line-height: 18px;
 }
 
-.projects ul{
-	list-style: none;
+.projects ul {
+  list-style: none;
 }
-.projects a{	
-	text-decoration: none;
+.projects a {
+  text-decoration: none;
 
-	opacity: .2;
+  opacity: 0.2;
 }
 .projects a:hover,
-.projects a:focus{
+.projects a:focus {
+  opacity: 1;
+}
+.projects a:active {
+  opacity: 0.1;
+}
+
+.map {
+  background-color: #eeeeee;
+  background-image: url(./img/index_img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.text-us {
+  background-color: white;
+}
+.text-us p:first-of-type {
+  font-family: "RobotoBold", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: black;
+}
+.text-us p {
+  line-height: 18px;
+}
+
+.index-drop-window {
+  background-color: #fff;
+}
+.text-us-form h3 {
+  font-family: "RobotoMedium", Helvetica, sans-serif;
+  font-size: 45px;
+  line-height: 45px;
+
+  color: #000;
+}
+.text-us-form label {
+  font-family: "RobotoBold", Helvetica, sans-serif;
+  line-height: 18px;
+
+  color: #000;
+}
+.text-us-form input,
+.text-us-form textarea {
+  font: inherit;
+  line-height: 18px;
+}
+
+.index-drop-window .close-cross{
+	opacity: .3;
+}
+.index-drop-window .close-cross:focus,
+.index-drop-window .close-cross:hover{
 	opacity: 1;
 }
-.projects a:active{
+.index-drop-window .close-cross:active{
 	opacity: .1;
 }
 
-.map{
-	background-color: #eeeeee;
-	background-image: url(./img/index_img/map.jpg);
-	background-repeat: no-repeat;
+.text-us-form input::-webkit-input-placeholder,
+.text-us-form input:hover::-webkit-input-placeholder,
+.text-us-form textarea::-webkit-input-placeholder,
+.text-us-form textarea:hover::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+.text-us-form input:-ms-input-placeholder,
+.text-us-form input:hover:-ms-input-placeholder,
+.text-us-form textarea:-ms-input-placeholder,
+.text-us-form textarea:hover:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+.text-us-form input::-ms-input-placeholder,
+.text-us-form input:hover::-ms-input-placeholder,
+.text-us-form textarea::-ms-input-placeholder,
+.text-us-form textarea:hover::-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+.text-us-form input::placeholder,
+.text-us-form input:hover::placeholder,
+.text-us-form textarea::placeholder,
+.text-us-form textarea:hover::placeholder {
+  color: rgba(68, 68, 68, 0.5);
 }
 
-.text-us{
-	background-color: white;
+.text-us-form input:focus::-webkit-input-placeholder,
+.text-us-form textarea:focus::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 1);
 }
-.text-us p:first-of-type{
-	font-family:"RobotoBold", Helvetica, sans-serif;
-	font-size: 18px;
-	line-height: 30px;
+.text-us-form input:focus::-moz-placeholder,
+.text-us-form textarea:focus::-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+.text-us-form input:focus:-moz-placeholder,
+.text-us-form textarea:focus:-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+.text-us-form input:focus:-ms-input-placeholder,
+.text-us-form textarea:focus:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
 
-	text-transform: uppercase;
-
-	color: black;
-}
-.text-us p{
-	line-height: 18px;
+.text-us-form input:invalid {
+  color: #e74246;
 }
 
-.social-footer ul{
-	list-style: none;
+.social-footer ul {
+  list-style: none;
 }
-.social-footer li{
-	background-color:#e1e1e1;
+.social-footer li {
+  background-color: #e1e1e1;
 }
 .social-footer li:hover,
-.social-footer li:focus{
-	background-color:#e74246;
+.social-footer li:focus {
+  background-color: #e74246;
 }
-.social-footer li:active{
-	background-color: #d7373b;
-	/* For SVG in future */
-	color: rgba(255,255,255, .3);
+.social-footer li:active {
+  background-color: #d7373b;
+  /* For SVG in future */
+  color: rgba(255, 255, 255, 0.3);
 }
-.social-footer p{
-	line-height: 22px;
+.social-footer p {
+  line-height: 22px;
 }
-.social-footer span{
-	font-family:"RobotoBold", Helvetica, sans-serif;
-	font-size: 36px;
-	line-height: 36px;
+.social-footer span {
+  font-family: "RobotoBold", Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
 
-	color: black;
+  color: black;
 }
-
-

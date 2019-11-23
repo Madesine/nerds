@@ -4,7 +4,7 @@ body {
 
   font-family: "RobotoRegular", Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 18px;
 
   color: #283136;
 }
@@ -45,6 +45,14 @@ header {
 
   color: black;
 }
+header h1 {
+  font-family: "RobotoMedium", Helvetica, sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+
+  color: black;
+}
+
 .header-navigation a:hover,
 .header-navigation a:focus,
 .cart a:hover,
@@ -56,20 +64,29 @@ header {
   color: #a6a6a6;
 }
 
-.carousel {
-  background-color: #eeeeee;
-}
-.carousel-paragraph span {
-  font-family: "RobotoMedium", Helvetica, sans-serif;
-  font-size: 55px;
-  line-height: 55px;
+.filter h2 {
+  font-family: "RobotoBold", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+
+  text-transform: uppercase;
 
   color: black;
 }
+.price-in-range label {
+  line-height: 22px;
+}
+.price-in-range output {
+  line-height: 22px;
+}
+.grid label,
+.features label {
+  line-height: 20px;
+}
 
 .button {
+  font: inherit;
   font-family: "RobotoMedium", Helvetica, sans-serif;
-  line-height: 18px;
 
   text-decoration: none;
   text-transform: uppercase;
@@ -85,81 +102,82 @@ header {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 }
+.filter-button {
+  color: #000;
+  background-color: #eeeeee;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+.filter-button:active {
+  background-color: #d5d5d5;
+  color: rgba(255, 255, 255, 0.3);
+}
 
-.order-sheet h2 {
+.sort h2 {
   font-family: "RobotoBold", Helvetica, sans-serif;
-  font-size: 24px;
-  line-height: 30px;
-
-  color: black;
-}
-
-.order-application a {
-  background-color: #00ca74;
-}
-.order-application a:hover,
-.order-application a:focus {
-  background-color: #00bc6c;
-}
-.order-application a:active {
-  background-color: #00aa62;
-}
-
-.order-presentation a {
-  background-color: #efc84a;
-}
-.order-presentation a:hover,
-.order-presentation a:focus {
-  background-color: #eab534;
-}
-.order-presentation a:active {
-  background-color: #e5a722;
-}
-
-.about-us-paragraph span {
-  font-family: "RobotoMedium", Helvetica, sans-serif;
-  font-size: 45px;
-  line-height: 45px;
-
-  color: black;
-}
-/* Wrong uppercase HERE */
-.about-us-offers h3,
-.about-us-advantages h3 {
-  font-family: "RobotoBold", Helvetica, sans-serif;
+  font-size: 18px;
 
   text-transform: uppercase;
 
   color: black;
 }
-.about-us-advantages ul {
+.sort ul {
   list-style: none;
 }
-.about-us-advantages span {
+.sort a {
+  font: inherit;
+  font-size: 14px;
+
+  text-decoration: none;
+
+  color: #000;
+  opacity: 0.3;
+}
+.sort a:focus,
+.sort a:hover {
+  opacity: 0.6;
+}
+.sort a:active {
+  opacity: 1;
+}
+
+.browser-img {
+  opacity: 0.12;
+}
+.browser-img:hover {
+  opacity: 1;
+}
+.product-item-hover {
+  background-color: #eeeeee;
+}
+.product-item-hover h4 {
   font-family: "RobotoBold", Helvetica, sans-serif;
-  font-size: 45px;
-  line-height: 10.06px;
+  font-size: 18px;
+  line-height: 30px;
+
+  text-transform: uppercase;
 
   color: black;
 }
-.about-us-advantages p {
-  line-height: 18px;
-}
 
-.projects ul {
-  list-style: none;
-}
-.projects a {
+.pagination a {
+  font: inherit;
+  font-family: "RobotoMedium", Helvetica, sans-serif;
+
   text-decoration: none;
 
-  opacity: 0.2;
+  color: #000;
+  background-color: #eeeeee;
 }
-.projects a:hover,
-.projects a:focus {
-  opacity: 1;
+.pagination a:hover,
+.pagination a:focus {
+  background-color: #dfdfdf;
 }
-.projects a:active {
-  opacity: 0.1;
+.pagination a:active {
+  background-color: #d5d5d5;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .map {

@@ -20,53 +20,6 @@ body {
   overflow: hidden;
 }
 
-header {
-  background-color: #eeeeee;
-}
-.header-logo:hover,
-.header-logo:focus {
-  opacity: 0.8;
-}
-.header-logo:active {
-  opacity: 0.3;
-}
-
-.header-navigation ul {
-  list-style: none;
-}
-.header-navigation a,
-.cart a {
-  font-family: "RobotoMedium", Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-
-  text-decoration: none;
-  text-transform: uppercase;
-
-  color: black;
-}
-.header-navigation a:hover,
-.header-navigation a:focus,
-.cart a:hover,
-.cart a:focus {
-  color: #fb565a;
-}
-.header-navigation a:active,
-.cart a:active {
-  color: #a6a6a6;
-}
-
-.carousel {
-  background-color: #eeeeee;
-}
-.carousel-paragraph span {
-  font-family: "RobotoMedium", Helvetica, sans-serif;
-  font-size: 55px;
-  line-height: 55px;
-
-  color: black;
-}
-
 .button {
   font-family: "RobotoMedium", Helvetica, sans-serif;
   line-height: 18px;
@@ -86,6 +39,59 @@ header {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.main-header {
+  background-color: #eeeeee;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  opacity: 0.8;
+}
+
+.header-logo:active {
+  opacity: 0.3;
+}
+
+.header-navigation ul {
+  list-style: none;
+}
+
+.header-navigation a,
+.cart a {
+  font-family: "RobotoMedium", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: black;
+}
+
+.header-navigation a:hover,
+.header-navigation a:focus,
+.cart a:hover,
+.cart a:focus {
+  color: #fb565a;
+}
+
+.header-navigation a:active,
+.cart a:active {
+  color: #a6a6a6;
+}
+
+.carousel {
+  background-color: #eeeeee;
+}
+
+.carousel-paragraph span {
+  font-family: "RobotoMedium", Helvetica, sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+
+  color: black;
+}
+
 .order-sheet h2 {
   font-family: "RobotoBold", Helvetica, sans-serif;
   font-size: 24px;
@@ -97,10 +103,12 @@ header {
 .order-application a {
   background-color: #00ca74;
 }
+
 .order-application a:hover,
 .order-application a:focus {
   background-color: #00bc6c;
 }
+
 .order-application a:active {
   background-color: #00aa62;
 }
@@ -108,10 +116,12 @@ header {
 .order-presentation a {
   background-color: #efc84a;
 }
+
 .order-presentation a:hover,
 .order-presentation a:focus {
   background-color: #eab534;
 }
+
 .order-presentation a:active {
   background-color: #e5a722;
 }
@@ -123,7 +133,7 @@ header {
 
   color: black;
 }
-/* Wrong uppercase HERE */
+
 .about-us-offers h3,
 .about-us-advantages h3 {
   font-family: "RobotoBold", Helvetica, sans-serif;
@@ -132,16 +142,19 @@ header {
 
   color: black;
 }
+
 .about-us-advantages ul {
   list-style: none;
 }
+
 .about-us-advantages span {
   font-family: "RobotoBold", Helvetica, sans-serif;
   font-size: 45px;
-  line-height: 10.06px;
+  line-height: 10px;
 
   color: black;
 }
+
 .about-us-advantages p {
   line-height: 18px;
 }
@@ -149,15 +162,18 @@ header {
 .projects ul {
   list-style: none;
 }
+
 .projects a {
   text-decoration: none;
 
   opacity: 0.2;
 }
+
 .projects a:hover,
 .projects a:focus {
   opacity: 1;
 }
+
 .projects a:active {
   opacity: 0.1;
 }
@@ -169,10 +185,15 @@ header {
   background-position: 0 0;
 }
 
-.text-us {
+.feedback {
   background-color: white;
 }
-.text-us p:first-of-type {
+
+.feedback p {
+  line-height: 18px;
+}
+
+.feedback-heading {
   font-family: "RobotoBold", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -181,28 +202,28 @@ header {
 
   color: black;
 }
-.text-us p {
-  line-height: 18px;
-}
 
 .index-drop-window {
   background-color: #fff;
 }
-.text-us-form h3 {
+
+.feedback-form h3 {
   font-family: "RobotoMedium", Helvetica, sans-serif;
   font-size: 45px;
   line-height: 45px;
 
   color: #000;
 }
-.text-us-form label {
+
+.feedback-form label {
   font-family: "RobotoBold", Helvetica, sans-serif;
   line-height: 18px;
 
   color: #000;
 }
-.text-us-form input,
-.text-us-form textarea {
+
+.feedback-form input,
+.feedback-form textarea {
   font: inherit;
   line-height: 18px;
 }
@@ -210,78 +231,90 @@ header {
 .index-drop-window .close-cross {
   opacity: 0.3;
 }
+
 .index-drop-window .close-cross:focus,
 .index-drop-window .close-cross:hover {
   opacity: 1;
 }
+
 .index-drop-window .close-cross:active {
   opacity: 0.1;
 }
 
-.text-us-form input::-webkit-input-placeholder,
-.text-us-form input:hover::-webkit-input-placeholder,
-.text-us-form textarea::-webkit-input-placeholder,
-.text-us-form textarea:hover::-webkit-input-placeholder {
-  color: rgba(68, 68, 68, 0.5);
-}
-.text-us-form input:-ms-input-placeholder,
-.text-us-form input:hover:-ms-input-placeholder,
-.text-us-form textarea:-ms-input-placeholder,
-.text-us-form textarea:hover:-ms-input-placeholder {
-  color: rgba(68, 68, 68, 0.5);
-}
-.text-us-form input::-ms-input-placeholder,
-.text-us-form input:hover::-ms-input-placeholder,
-.text-us-form textarea::-ms-input-placeholder,
-.text-us-form textarea:hover::-ms-input-placeholder {
-  color: rgba(68, 68, 68, 0.5);
-}
-.text-us-form input::placeholder,
-.text-us-form input:hover::placeholder,
-.text-us-form textarea::placeholder,
-.text-us-form textarea:hover::placeholder {
+.feedback-form input::-webkit-input-placeholder,
+.feedback-form input:hover::-webkit-input-placeholder,
+.feedback-form textarea::-webkit-input-placeholder,
+.feedback-form textarea:hover::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 0.5);
 }
 
-.text-us-form input:focus::-webkit-input-placeholder,
-.text-us-form textarea:focus::-webkit-input-placeholder {
-  color: rgba(68, 68, 68, 1);
+.feedback-form input:-ms-input-placeholder,
+.feedback-form input:hover:-ms-input-placeholder,
+.feedback-form textarea:-ms-input-placeholder,
+.feedback-form textarea:hover:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
 }
-.text-us-form input:focus::-moz-placeholder,
-.text-us-form textarea:focus::-moz-placeholder {
-  color: rgba(68, 68, 68, 1);
+
+.feedback-form input::-ms-input-placeholder,
+.feedback-form input:hover::-ms-input-placeholder,
+.feedback-form textarea::-ms-input-placeholder,
+.feedback-form textarea:hover::-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
 }
-.text-us-form input:focus:-moz-placeholder,
-.text-us-form textarea:focus:-moz-placeholder {
-  color: rgba(68, 68, 68, 1);
+
+.feedback-form input::placeholder,
+.feedback-form input:hover::placeholder,
+.feedback-form textarea::placeholder,
+.feedback-form textarea:hover::placeholder {
+  color: rgba(68, 68, 68, 0.5);
 }
-.text-us-form input:focus:-ms-input-placeholder,
-.text-us-form textarea:focus:-ms-input-placeholder {
+
+.feedback-form input:focus::-webkit-input-placeholder,
+.feedback-form textarea:focus::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 1);
 }
 
-.text-us-form input:invalid {
+.feedback-form input:focus::-moz-placeholder,
+.feedback-form textarea:focus::-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.feedback-form input:focus:-moz-placeholder,
+.feedback-form textarea:focus:-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.feedback-form input:focus:-ms-input-placeholder,
+.feedback-form textarea:focus:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.feedback-form input:invalid {
   color: #e74246;
 }
 
 .social-footer ul {
   list-style: none;
 }
+
 .social-footer li {
   background-color: #e1e1e1;
 }
+
 .social-footer li:hover,
 .social-footer li:focus {
   background-color: #e74246;
 }
+
 .social-footer li:active {
   background-color: #d7373b;
-  /* For SVG in future */
   color: rgba(255, 255, 255, 0.3);
 }
+
 .social-footer p {
   line-height: 22px;
 }
+
 .social-footer span {
   font-family: "RobotoBold", Helvetica, sans-serif;
   font-size: 36px;

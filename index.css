@@ -57,10 +57,13 @@ body {
 
 .header-container {
   margin: 0 auto;
-  margin-bottom: 20px;
+	margin-bottom: 20px;
+	padding-top: 50px;
+	padding-bottom: 14px;
 
   display: flex;
-  justify-content: space-between;
+	justify-content: space-between;
+	align-items: center;
 
   width: 1160px;
 }
@@ -80,7 +83,7 @@ body {
 }
 
 .header-navigation {
-  min-width: 600px;
+  width: 600px;
 }
 
 .header-navigation ul {
@@ -135,7 +138,7 @@ main {
 
 .carousel-container {
   margin: 0 auto;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 
   display: flex;
   flex-direction: column;

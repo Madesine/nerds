@@ -10,39 +10,46 @@
       content="дизайн, студия, веб-сайты, приложения, презентации, Краснодар, разработка, магазин, NЁRDS"
     />
     <link rel="stylesheet" href="./normalize.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./catalog.css" />
     <title>Магазин NЁRDS</title>
   </head>
   <body>
     <header class="main-header">
-      <div class="header-logo">
-        <a href="../Nerds.web/nerds-index.html" aria-label="Лого">
-          <img
-            src="../Nerds.web/img/index_img/index__img_svg/nerds-logo.svg"
-            alt="Лого 'Nerds' "
-          />
-        </a>
-      </div>
-      <nav class="header-navigation">
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="../Nerds.web/nerds-catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <div class="header-logo">
+          <a href="../Nerds.web/nerds-index.html" aria-label="Лого">
+            <img
+              src="../Nerds.web/img/index_img/index__img_svg/nerds-logo.svg"
+              alt="Лого 'Nerds' "
+              width="160"
+              height="65"
+            />
+          </a>
+        </div>
+        <nav class="header-navigation">
+          <ul>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="../Nerds.web/nerds-catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <div class="cart">
-        <a href="#">
-          <img
-            src="../Nerds.web/img/index_img/index__img_svg/cart-icon.svg"
-            alt="Корзина"
-          />
-          Корзина
-        </a>
+        <div class="cart">
+          <a href="#">
+            <img
+              src="../Nerds.web/img/index_img/index__img_svg/cart-icon.svg"
+              alt="Корзина"
+            />
+            Корзина
+          </a>
+        </div>
+        <h1>Магазин готовых шаблонов</h1>
       </div>
-      <h1>Магазин готовых шаблонов</h1>
     </header>
 
     <main>
@@ -115,179 +122,186 @@
         <input type="submit" class="filter-button button" value="Показать" />
       </form>
 
-      <div class="choose-sort">
-        <h2>Сортировать:</h2>
-        <ul>
-          <li><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По названию</a></li>
-          <li>
-            <a href="#" class="less-to-more current" aria-label="Вниз"
-              ><img
-                src="../Nerds.web/img/catalog_img/icon-down-dir.png"
-                alt="Вниз"
-            /></a>
-          </li>
-          <li>
-            <a href="#" class="more-to-less" aria-label="Вверх"
-              ><img
-                src="../Nerds.web/img/catalog_img/icon-down-dir.png"
-                alt="Вверх"
-            /></a>
-          </li>
-        </ul>
+      <div class="main-flex-wrapper">
+        <div class="choose-sort">
+          <h2>Сортировать:</h2>
+          <ul>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
+            <li>
+              <a href="#" class="less-to-more current" aria-label="Вниз"
+                ><img
+                  src="../Nerds.web/img/catalog_img/icon-down-dir.png"
+                  alt="Вниз"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="more-to-less" aria-label="Вверх"
+                ><img
+                  src="../Nerds.web/img/catalog_img/icon-down-dir.png"
+                  alt="Вверх"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- All in comments will be work on hover -->
+        <section class="products">
+          <h2 class="visually-hidden">Товары в нашем магазине</h2>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет Sedona</h3>
+            <img
+              class="browser-img"
+              src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+            <img
+              src="../Nerds.web/img/catalog_img/img-sedona.jpg"
+              alt="Макет Sedona"
+            />
+            <div class="product-item-hover">
+              <h4>SEDONA</h4>
+              <p>Информационный сайт для туристов</p>
+              <div>
+                <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет Pink App</h3>
+            <img
+              class="browser-img"
+              src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+            <img
+              src="../Nerds.web/img/catalog_img/img-pink.jpg"
+              alt="Макет Pink App"
+            />
+            <div class="product-item-hover">
+              <h4>PINK APP</h4>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <div>
+                <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет Barbershop Borodonski</h3>
+            <img
+              class="browser-img"
+              src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+            <img
+              src="../Nerds.web/img/catalog_img/img-barbershop.jpg"
+              alt="Макет Barbershop Borodonski"
+            />
+            <div class="product-item-hover">
+              <h4>BARBERSHOP</h4>
+              <p>Сайт салоны красоты. Для мужчин, да.</p>
+              <div>
+                <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет Mishka</h3>
+            <img
+              class="browser-img"
+              src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+            <img
+              src="../Nerds.web/img/catalog_img/img-mishka.jpg"
+              alt="Макет Mishka"
+            />
+            <div class="product-item-hover">
+              <h4>MISHKA</h4>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <div>
+                <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет A Plus</h3>
+            <img
+              class="browser-img"
+              src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+            <img
+              src="../Nerds.web/img/catalog_img/img-aplus.jpg"
+              alt="Макет A Plus"
+            />
+            <div class="product-item-hover">
+              <h4>A PLUS</h4>
+              <p>Лендинг курсов повышения квалификации</p>
+              <div>
+                <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет кваст</h3>
+            <img
+              class="browser-img"
+              src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+            <img
+              src="../Nerds.web/img/catalog_img/img-kvast.jpg"
+              alt="Макет кваст"
+            />
+            <div class="product-item-hover">
+              <h4>КВАСТ</h4>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <div>
+                <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <nav class="pagination">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Следующая</a>
+        </nav>
       </div>
-
-      <!-- All in comments will be work on hover -->
-      <section class="products">
-        <h2 class="visually-hidden">Товары в нашем магазине</h2>
-
-        <article class="product-item">
-          <h3 class="visually-hidden">Макет Sedona</h3>
-          <img
-            class="browser-img"
-            src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
-            alt="Хэдер браузера"
-          />
-          <img
-            src="../Nerds.web/img/catalog_img/img-sedona.jpg"
-            alt="Макет Sedona"
-          />
-          <div class="product-item-hover">
-            <h4>SEDONA</h4>
-            <p>Информационный сайт для туристов</p>
-            <div>
-              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-item">
-          <h3 class="visually-hidden">Макет Pink App</h3>
-          <img
-            class="browser-img"
-            src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
-            alt="Хэдер браузера"
-          />
-          <img
-            src="../Nerds.web/img/catalog_img/img-pink.jpg"
-            alt="Макет Pink App"
-          />
-          <div class="product-item-hover">
-            <h4>PINK APP</h4>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <div>
-              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-item">
-          <h3 class="visually-hidden">Макет Barbershop Borodonski</h3>
-          <img
-            class="browser-img"
-            src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
-            alt="Хэдер браузера"
-          />
-          <img
-            src="../Nerds.web/img/catalog_img/img-barbershop.jpg"
-            alt="Макет Barbershop Borodonski"
-          />
-          <div class="product-item-hover">
-            <h4>BARBERSHOP</h4>
-            <p>Сайт салоны красоты. Для мужчин, да.</p>
-            <div>
-              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-item">
-          <h3 class="visually-hidden">Макет Mishka</h3>
-          <img
-            class="browser-img"
-            src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
-            alt="Хэдер браузера"
-          />
-          <img
-            src="../Nerds.web/img/catalog_img/img-mishka.jpg"
-            alt="Макет Mishka"
-          />
-          <div class="product-item-hover">
-            <h4>MISHKA</h4>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <div>
-              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-item">
-          <h3 class="visually-hidden">Макет A Plus</h3>
-          <img
-            class="browser-img"
-            src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
-            alt="Хэдер браузера"
-          />
-          <img
-            src="../Nerds.web/img/catalog_img/img-aplus.jpg"
-            alt="Макет A Plus"
-          />
-          <div class="product-item-hover">
-            <h4>A PLUS</h4>
-            <p>Лендинг курсов повышения квалификации</p>
-            <div>
-              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-item">
-          <h3 class="visually-hidden">Макет кваст</h3>
-          <img
-            class="browser-img"
-            src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
-            alt="Хэдер браузера"
-          />
-          <img
-            src="../Nerds.web/img/catalog_img/img-kvast.jpg"
-            alt="Макет кваст"
-          />
-          <div class="product-item-hover">
-            <h4>КВАСТ</h4>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <div>
-              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <nav class="pagination">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">Следующая</a>
-      </nav>
     </main>
 
-    <footer>
+    <footer class="main-footer">
       <div class="map">
-        <img
-          src="../Nerds.web/img/index_img/map-marker.png"
-          alt="ул. Б. Конюшенная, д. 19/8"
-        />
+        <div class="map-content">
+          <img
+            class="map-marker"
+            src="../Nerds.web/img/index_img/map-marker.png"
+            alt="ул. Б. Конюшенная, д. 19/8"
+            width="231"
+            height="190"
+          />
 
-        <section class="feedback">
-          <h3 class="visually-hidden">Контактная информация</h3>
-          <p class="feedback-heading">NЁRDS DESIGN STUDIO</p>
-          <p>
-            191186, Санкт-Петербург,<br />
-            ул. Б. Конюшенная, д. 19/8 <br /><br />
-            тел. +7 (812)275-75-75
-          </p>
-          <a href="#" class="button">НАПИШИТЕ НАМ</a>
-        </section>
+          <section class="feedback">
+            <h3 class="visually-hidden">Контактная информация</h3>
+            <p class="feedback-heading">NЁRDS DESIGN STUDIO</p>
+            <p>
+              191186, Санкт-Петербург,<br />
+              ул. Б. Конюшенная, д. 19/8 <br /><br />
+              тел. +7 (812)275-75-75
+            </p>
+            <a href="#" class="button">НАПИШИТЕ НАМ</a>
+          </section>
+        </div>
       </div>
 
       <div class="social-footer">
@@ -321,7 +335,7 @@
       </div>
     </footer>
     <!-- drop out window onclick "feedback-form button"  -->
-    <div class="index-drop-window">
+    <!-- <div class="index-drop-window">
       <form action="#" class="feedback-form">
         <h3>Напишите нам</h3>
         <p>
@@ -366,6 +380,6 @@
         src="../Nerds.web/img/index_img/index__img_svg/close-cross.svg"
         alt="выход"
       />
-    </div>
+    </div> -->
   </body>
 </html>

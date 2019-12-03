@@ -1,10 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
 
   font-family: "Roboto", Helvetica, sans-serif;
-	font-size: 16px;
-	font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 18px;
 
   color: #283136;
@@ -23,8 +24,8 @@ body {
 
 .button {
   font: inherit;
-	font-family: "Roboto", Helvetica, sans-serif;
-	font-weight: 500;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 500;
 
   text-decoration: none;
   text-transform: uppercase;
@@ -59,7 +60,24 @@ body {
 }
 
 .main-header {
+  width: 100%;
+
   background-color: #eeeeee;
+}
+
+.header-container {
+  margin: 0 auto;
+	margin-bottom: 50px;
+	padding-top: 50px;
+  padding-bottom: 115px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1160px;
+  min-height: 355px;
 }
 
 .header-logo:hover,
@@ -71,15 +89,26 @@ body {
   opacity: 0.3;
 }
 
+.header-navigation {
+  width: 600px;
+}
+
 .header-navigation ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.cart {
+  min-width: 160px;
 }
 
 .header-navigation a,
 .cart a {
   font-family: "Roboto", Helvetica, sans-serif;
-	font-size: 16px;
-	font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 30px;
 
   text-decoration: none;
@@ -88,10 +117,25 @@ body {
   color: black;
 }
 
+main {
+	margin: 0 auto;
+	padding-bottom: 60px;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+}
+
 .main-header h1 {
+  margin: 0;
+  padding: 0;
+
+  margin: 0 auto;
+
   font-family: "Roboto", Helvetica, sans-serif;
-	font-size: 55px;
-	font-weight: 500;
+  font-size: 55px;
+  font-weight: 500;
   line-height: 55px;
 
   color: black;
@@ -109,10 +153,14 @@ body {
   color: #a6a6a6;
 }
 
+.filter {
+  width: 260px;
+}
+
 .filter h2 {
   font-family: "Roboto", Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 30px;
 
   text-transform: uppercase;
@@ -121,7 +169,7 @@ body {
 }
 
 .price-in-range label,
-.price-in-range output{
+.price-in-range output {
   line-height: 22px;
 }
 
@@ -130,10 +178,17 @@ body {
   line-height: 20px;
 }
 
+.main-flex-wrapper {
+  margin: 0;
+  padding: 0;
+
+  width: 760px;
+}
+
 .choose-sort h2 {
   font-family: "Roboto", Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 
   text-transform: uppercase;
 
@@ -177,8 +232,8 @@ body {
 
 .product-item-hover h4 {
   font-family: "Roboto", Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 30px;
 
   text-transform: uppercase;
@@ -188,8 +243,8 @@ body {
 
 .pagination a {
   font: inherit;
-	font-family: "Roboto", Helvetica, sans-serif;
-	font-weight: 500;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 500;
 
   text-decoration: none;
 
@@ -207,14 +262,45 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.main-footer {
+  width: 100%;
+  background-color: #fff;
+}
+
 .map {
   background-color: #eeeeee;
   background-image: url(./img/index_img/map.jpg);
+  background-size: 1600px 100%;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center 0;
+}
+
+.map-content {
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding: 55px 0;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  width: 1160px;
+}
+
+.map-marker {
+  margin-right: 235px;
+  margin-top: -40px;
+
+  width: 231px;
+  height: 190px;
 }
 
 .feedback {
+  margin-right: auto;
+
+  width: 320px;
+  height: 310px;
+
   background-color: white;
 }
 
@@ -224,8 +310,8 @@ body {
 
 .feedback-heading {
   font-family: "Roboto", Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 30px;
 
   text-transform: uppercase;
@@ -239,16 +325,16 @@ body {
 
 .feedback-form h3 {
   font-family: "Roboto", Helvetica, sans-serif;
-	font-size: 45px;
-	font-weight: 500;
+  font-size: 45px;
+  font-weight: 500;
   line-height: 45px;
 
   color: #000;
 }
 
 .feedback-form label {
-	font-family: "Roboto", Helvetica, sans-serif;
-	font-weight: 700;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 700;
   line-height: 18px;
 
   color: #000;
@@ -325,11 +411,25 @@ body {
   color: #e74246;
 }
 
+.social-footer {
+  margin: 0 auto;
+
+  display: flex;
+
+  width: 1160px;
+
+  background-color: #fff;
+}
+
 .social-footer ul {
   list-style: none;
 }
 
 .social-footer li {
+  margin-bottom: 70px;
+
+  display: inline-block;
+
   background-color: #e1e1e1;
 }
 
@@ -344,13 +444,15 @@ body {
 }
 
 .social-footer p {
+  margin-left: 140px;
+
   line-height: 22px;
 }
 
 .social-footer span {
   font-family: "Roboto", Helvetica, sans-serif;
-	font-size: 36px;
-	font-weight: 700;
+  font-size: 36px;
+  font-weight: 700;
   line-height: 36px;
 
   color: black;

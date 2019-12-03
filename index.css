@@ -233,6 +233,7 @@ main {
 .about-us {
   margin: 0 auto;
 	margin-bottom: 46px;
+	padding-bottom: 75px;
 	
 	display: flex;
 	flex-wrap: wrap;

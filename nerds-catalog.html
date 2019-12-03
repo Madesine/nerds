@@ -9,10 +9,13 @@
       name="keywords"
       content="дизайн, студия, веб-сайты, приложения, презентации, Краснодар, разработка, магазин, NЁRDS"
     />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./catalog.css" />
     <title>Магазин NЁRDS</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <div class="header-logo">
         <a href="../Nerds.web/nerds-index.html" aria-label="Лого">
           <img
@@ -21,7 +24,6 @@
           />
         </a>
       </div>
-
       <nav class="header-navigation">
         <ul>
           <li><a href="#">Студия</a></li>
@@ -32,13 +34,13 @@
       </nav>
 
       <div class="cart">
-        <a href="#"
-          ><img
+        <a href="#">
+          <img
             src="../Nerds.web/img/index_img/index__img_svg/cart-icon.svg"
             alt="Корзина"
           />
-          Корзина</a
-        >
+          Корзина
+        </a>
       </div>
       <h1>Магазин готовых шаблонов</h1>
     </header>
@@ -64,7 +66,7 @@
           </p>
         </section>
 
-        <section class="grid">
+        <section class="choose-grid">
           <h2>Сетка:</h2>
           <p>
             <input
@@ -110,10 +112,10 @@
           </p>
         </section>
 
-        <input type="submit" value="Показать" />
+        <input type="submit" class="filter-button button" value="Показать" />
       </form>
 
-      <div class="sort">
+      <div class="choose-sort">
         <h2>Сортировать:</h2>
         <ul>
           <li><a href="#">По цене</a></li>
@@ -143,6 +145,7 @@
         <article class="product-item">
           <h3 class="visually-hidden">Макет Sedona</h3>
           <img
+            class="browser-img"
             src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
             alt="Хэдер браузера"
           />
@@ -150,16 +153,19 @@
             src="../Nerds.web/img/catalog_img/img-sedona.jpg"
             alt="Макет Sedona"
           />
-          <!-- <div class="product-item-hover">
-					<h4>SEDONA</h4>
-					<p>Информационный сайт  для туристов</p>
-					<div><a href="#" aria-label="Цена">9900 РУБ.</a></div>
-				</div>			 -->
+          <div class="product-item-hover">
+            <h4>SEDONA</h4>
+            <p>Информационный сайт для туристов</p>
+            <div>
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </div>
         </article>
 
         <article class="product-item">
           <h3 class="visually-hidden">Макет Pink App</h3>
           <img
+            class="browser-img"
             src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
             alt="Хэдер браузера"
           />
@@ -167,16 +173,19 @@
             src="../Nerds.web/img/catalog_img/img-pink.jpg"
             alt="Макет Pink App"
           />
-          <!-- <div class="product-item-hover">
-					<h4>PINK APP</h4>
-					<p>Продуктовый лендинг приложения для iOS и Android</p>
-					<div><a href="#" aria-label="Цена">9900 РУБ.</a></div>
-				</div> -->
+          <div class="product-item-hover">
+            <h4>PINK APP</h4>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <div>
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </div>
         </article>
 
         <article class="product-item">
           <h3 class="visually-hidden">Макет Barbershop Borodonski</h3>
           <img
+            class="browser-img"
             src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
             alt="Хэдер браузера"
           />
@@ -184,16 +193,19 @@
             src="../Nerds.web/img/catalog_img/img-barbershop.jpg"
             alt="Макет Barbershop Borodonski"
           />
-          <!-- <div class="product-item-hover">
-					<h4>BARBERSHOP</h4>
-					<p>Сайт салоны красоты. Для мужчин, да.</p>
-					<div><a href="#" aria-label="Цена">9900 РУБ.</a></div>
-				</div> -->
+          <div class="product-item-hover">
+            <h4>BARBERSHOP</h4>
+            <p>Сайт салоны красоты. Для мужчин, да.</p>
+            <div>
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </div>
         </article>
 
         <article class="product-item">
           <h3 class="visually-hidden">Макет Mishka</h3>
           <img
+            class="browser-img"
             src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
             alt="Хэдер браузера"
           />
@@ -201,16 +213,19 @@
             src="../Nerds.web/img/catalog_img/img-mishka.jpg"
             alt="Макет Mishka"
           />
-          <!-- <div class="product-item-hover">
-					<h4>MISHKA</h4>
-					<p>Интернет-магазин  вязаных игрушек</p>
-					<div><a href="#" aria-label="Цена">9900 РУБ.</a></div>
-				</div> -->
+          <div class="product-item-hover">
+            <h4>MISHKA</h4>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <div>
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </div>
         </article>
 
         <article class="product-item">
           <h3 class="visually-hidden">Макет A Plus</h3>
           <img
+            class="browser-img"
             src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
             alt="Хэдер браузера"
           />
@@ -218,16 +233,19 @@
             src="../Nerds.web/img/catalog_img/img-aplus.jpg"
             alt="Макет A Plus"
           />
-          <!-- <div class="product-item-hover">
-					<h4>A PLUS</h4>
-					<p>Лендинг курсов повышения квалификации</p>
-					<div><a href="#" aria-label="Цена">9900 РУБ.</a></div>
-				</div> -->
+          <div class="product-item-hover">
+            <h4>A PLUS</h4>
+            <p>Лендинг курсов повышения квалификации</p>
+            <div>
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </div>
         </article>
 
         <article class="product-item">
           <h3 class="visually-hidden">Макет кваст</h3>
           <img
+            class="browser-img"
             src="../Nerds.web/img/catalog_img/catalog__img_svg/browser.svg"
             alt="Хэдер браузера"
           />
@@ -235,11 +253,13 @@
             src="../Nerds.web/img/catalog_img/img-kvast.jpg"
             alt="Макет кваст"
           />
-          <!-- <div class="product-item-hover">
-					<h4>КВАСТ</h4>
-					<p>Промо-сайт производителя крафтового кваса</p>
-					<div><a href="#" aria-label="Цена">9900 РУБ.</a></div>
-				</div> -->
+          <div class="product-item-hover">
+            <h4>КВАСТ</h4>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <div>
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </div>
         </article>
       </section>
 
@@ -255,18 +275,18 @@
       <div class="map">
         <img
           src="../Nerds.web/img/index_img/map-marker.png"
-          alt="191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8"
+          alt="ул. Б. Конюшенная, д. 19/8"
         />
 
-        <section class="text-us">
+        <section class="feedback">
           <h3 class="visually-hidden">Контактная информация</h3>
-          <p>NЁRDS DESIGN STUDIO</p>
+          <p class="feedback-heading">NЁRDS DESIGN STUDIO</p>
           <p>
             191186, Санкт-Петербург,<br />
-            ул. Б. Конюшенная, д. 19/8 <br />
+            ул. Б. Конюшенная, д. 19/8 <br /><br />
             тел. +7 (812)275-75-75
           </p>
-          <a href="#" class="text-us-form">НАПИШИТЕ НАМ</a>
+          <a href="#" class="button">НАПИШИТЕ НАМ</a>
         </section>
       </div>
 
@@ -300,49 +320,52 @@
         </p>
       </div>
     </footer>
-    <!-- drop out window onclick "text-us-form button"  -->
-    <form action="#" class="drop-out-text-us-form">
-      <h3>Напишите нам</h3>
-      <p>
-        <label for="user-name">Ваше имя:</label><br />
-        <input
-          type="text"
-          name="user_name"
-          id="user-name"
-          placeholder="Имя Фамилия"
-          pattern="[А-Яа-яЁё]+\s[А-Яа-яЁё]+"
-          required
-        />
-      </p>
-      <p>
-        <label for="user-email">Ваш e-mail:</label><br />
-        <input
-          type="email"
-          name="user_email"
-          id="user-email"
-          placeholder="email@example.com"
-          pattern="[A-Za-z]+\@[a-zA-Z]+\.[com|ru]+"
-          required
-        />
-      </p>
-      <p>
-        <label for="user-comment">Текст письма:</label><br />
-        <textarea
-          name="user_comment"
-          id="user-comment"
-          cols="30"
-          rows="7"
-          placeholder="В свободной форме"
-        ></textarea>
-      </p>
+    <!-- drop out window onclick "feedback-form button"  -->
+    <div class="index-drop-window">
+      <form action="#" class="feedback-form">
+        <h3>Напишите нам</h3>
+        <p>
+          <label for="user-name">Ваше имя:</label><br />
+          <input
+            type="text"
+            name="user_name"
+            id="user-name"
+            placeholder="Имя Фамилия"
+            pattern="[А-Яа-яЁё]+\s[А-Яа-яЁё]+"
+            required
+          />
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label><br />
+          <input
+            type="email"
+            name="user_email"
+            id="user-email"
+            placeholder="email@example.com"
+            pattern="[A-Za-z]+\@[a-zA-Z]+\.[com|ru]+"
+            required
+          />
+        </p>
+        <p>
+          <label for="user-comment">Текст письма:</label><br />
+          <textarea
+            name="user_comment"
+            id="user-comment"
+            cols="30"
+            rows="7"
+            placeholder="В свободной форме"
+          ></textarea>
+        </p>
 
-      <input type="submit" value="Отправить" />
+        <input type="submit" class="button" value="Отправить" />
+      </form>
 
       <input
+        class="close-cross"
         type="image"
-        src="../Nerds.web/img/index_img/close-cross.png"
+        src="../Nerds.web/img/index_img/index__img_svg/close-cross.svg"
         alt="выход"
       />
-    </form>
+    </div>
   </body>
 </html>

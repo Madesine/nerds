@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+  line-height: 18px;
+
+  color: #283136;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font: inherit;
+	font-family: "Roboto", Helvetica, sans-serif;
+	font-weight: 500;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: white;
+  background-color: #fb565a;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-button {
+  color: #000;
+  background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  opacity: 0.8;
+}
+
+.header-logo:active {
+  opacity: 0.3;
+}
+
+.header-navigation ul {
+  list-style: none;
+}
+
+.header-navigation a,
+.cart a {
+  font-family: "Roboto", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+  line-height: 30px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: black;
+}
+
+.main-header h1 {
+  font-family: "Roboto", Helvetica, sans-serif;
+	font-size: 55px;
+	font-weight: 500;
+  line-height: 55px;
+
+  color: black;
+}
+
+.header-navigation a:hover,
+.header-navigation a:focus,
+.cart a:hover,
+.cart a:focus {
+  color: #fb565a;
+}
+
+.header-navigation a:active,
+.cart a:active {
+  color: #a6a6a6;
+}
+
+.filter h2 {
+  font-family: "Roboto", Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: black;
+}
+
+.price-in-range label,
+.price-in-range output{
+  line-height: 22px;
+}
+
+.choose-grid label,
+.features label {
+  line-height: 20px;
+}
+
+.choose-sort h2 {
+  font-family: "Roboto", Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+
+  text-transform: uppercase;
+
+  color: black;
+}
+
+.choose-sort ul {
+  list-style: none;
+}
+
+.choose-sort a {
+  font: inherit;
+  font-size: 14px;
+
+  text-decoration: none;
+
+  color: #000;
+  opacity: 0.3;
+}
+
+.choose-sort a:focus,
+.choose-sort a:hover {
+  opacity: 0.6;
+}
+
+.choose-sort a:active {
+  opacity: 1;
+}
+
+.browser-img {
+  opacity: 0.12;
+}
+
+.browser-img:hover {
+  opacity: 1;
+}
+
+.product-item-hover {
+  background-color: #eeeeee;
+}
+
+.product-item-hover h4 {
+  font-family: "Roboto", Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: black;
+}
+
+.pagination a {
+  font: inherit;
+	font-family: "Roboto", Helvetica, sans-serif;
+	font-weight: 500;
+
+  text-decoration: none;
+
+  color: #000;
+  background-color: #eeeeee;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination a:active {
+  background-color: #d5d5d5;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.map {
+  background-color: #eeeeee;
+  background-image: url(./img/index_img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feedback {
+  background-color: white;
+}
+
+.feedback p {
+  line-height: 18px;
+}
+
+.feedback-heading {
+  font-family: "Roboto", Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: black;
+}
+
+.index-drop-window {
+  background-color: #fff;
+}
+
+.feedback-form h3 {
+  font-family: "Roboto", Helvetica, sans-serif;
+	font-size: 45px;
+	font-weight: 500;
+  line-height: 45px;
+
+  color: #000;
+}
+
+.feedback-form label {
+	font-family: "Roboto", Helvetica, sans-serif;
+	font-weight: 700;
+  line-height: 18px;
+
+  color: #000;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  font: inherit;
+  line-height: 18px;
+}
+
+.index-drop-window .close-cross {
+  opacity: 0.3;
+}
+
+.index-drop-window .close-cross:focus,
+.index-drop-window .close-cross:hover {
+  opacity: 1;
+}
+
+.index-drop-window .close-cross:active {
+  opacity: 0.1;
+}
+
+.feedback-form input::-webkit-input-placeholder,
+.feedback-form input:hover::-webkit-input-placeholder,
+.feedback-form textarea::-webkit-input-placeholder,
+.feedback-form textarea:hover::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback-form input:-ms-input-placeholder,
+.feedback-form input:hover:-ms-input-placeholder,
+.feedback-form textarea:-ms-input-placeholder,
+.feedback-form textarea:hover:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback-form input::-ms-input-placeholder,
+.feedback-form input:hover::-ms-input-placeholder,
+.feedback-form textarea::-ms-input-placeholder,
+.feedback-form textarea:hover::-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback-form input::placeholder,
+.feedback-form input:hover::placeholder,
+.feedback-form textarea::placeholder,
+.feedback-form textarea:hover::placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback-form input:focus::-webkit-input-placeholder,
+.feedback-form textarea:focus::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.feedback-form input:focus::-moz-placeholder,
+.feedback-form textarea:focus::-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.feedback-form input:focus:-moz-placeholder,
+.feedback-form textarea:focus:-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.feedback-form input:focus:-ms-input-placeholder,
+.feedback-form textarea:focus:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.feedback-form input:invalid {
+  color: #e74246;
+}
+
+.social-footer ul {
+  list-style: none;
+}
+
+.social-footer li {
+  background-color: #e1e1e1;
+}
+
+.social-footer li:hover,
+.social-footer li:focus {
+  background-color: #e74246;
+}
+
+.social-footer li:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-footer p {
+  line-height: 22px;
+}
+
+.social-footer span {
+  font-family: "Roboto", Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+  line-height: 36px;
+
+  color: black;
+}

@@ -10,9 +10,13 @@
       content="дизайн, студия, веб-сайты, приложения, презентации, Краснодар, разработка"
     />
     <title>NЁRDS DESIGN STUDIO</title>
+    <link rel="stylesheet" href="./normalize.css" />
+		<!-- <link rel="stylesheet" href="./fonts.css" /> -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <div class="header-logo">
         <a href="../Nerds.web/nerds-index.html" aria-label="Лого">
           <img
@@ -48,7 +52,7 @@
         </p>
 
         <div class="carousel-button">
-          <a href="#">Узнать больше</a>
+          <a href="#" class="button">Узнать больше</a>
         </div>
 
         <img
@@ -99,7 +103,7 @@
           />
           <h2>Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#" class="order-sheet-button">Заказать</a>
+          <a href="#" class="order-sheet-button button">Заказать</a>
         </article>
 
         <article class="order-application">
@@ -109,7 +113,7 @@
           />
           <h2>Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#" class="order-sheet-button">Заказать</a>
+          <a href="#" class="order-sheet-button button">Заказать</a>
         </article>
 
         <article class="order-presentation">
@@ -119,7 +123,7 @@
           />
           <h2>Презентации</h2>
           <p>Вы даже не подозревайте насколько вы изумительны!</p>
-          <a href="#" class="order-sheet-button">Заказать</a>
+          <a href="#" class="order-sheet-button button">Заказать</a>
         </article>
       </section>
 
@@ -129,45 +133,49 @@
         <p class="about-us-paragraph">
           <span>Мы — маленькая, но гордая дизайн-студия из Краснодара.</span
           ><br />
-          Исповедуем принципы минимализма и чистоты. Ставим математически
+          Исповедуем принципы минимализма и чистоты. Ставим математический
+          расчет превыше креатива.Работаем не покладая рук, как роботы.
         </p>
 
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul class="about-us-offers">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
+        <div class="about-us-offers">
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
 
         <img
           src="../Nerds.web/img/index_img/nerds-illustration.jpg"
           alt="Лого студии"
         />
 
-        <h3>с 2004 года Любим точность во всем:</h3>
+        <div class="about-us-advantages">
+          <h3>С 2004 года любим точность во всем:</h3>
+          <ul>
+            <li>
+              <p>
+                <span>146<sup>%</sup></span
+                ><br />Уровень самоотдачи
+              </p>
+            </li>
 
-        <ul class="about-us-advantages">
-          <li>
-            <p>
-              <span>146<sup>%</sup></span
-              ><br />Уровень самоотдачи
-            </p>
-          </li>
+            <li>
+              <p>
+                <span>100<sup>%</sup></span
+                ><br />Соблюдение сроков
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <span>100<sup>%</sup></span
-              ><br />Соблюдение сроков
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <span>50<sup>%</sup></span
-              ><br />Минимальная предоплата
-            </p>
-          </li>
-        </ul>
+            <li>
+              <p>
+                <span>50<sup>%</sup></span
+                ><br />Минимальная предоплата
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="projects">
@@ -205,18 +213,18 @@
       <div class="map">
         <img
           src="../Nerds.web/img/index_img/map-marker.png"
-          alt="191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8"
+          alt="ул. Б. Конюшенная, д. 19/8"
         />
 
-        <section class="text-us">
+        <section class="feedback">
           <h3 class="visually-hidden">Контактная информация</h3>
-          <p>NЁRDS DESIGN STUDIO</p>
+          <p class="feedback-heading">NЁRDS DESIGN STUDIO</p>
           <p>
             191186, Санкт-Петербург,<br />
-            ул. Б. Конюшенная, д. 19/8 <br />
+            ул. Б. Конюшенная, д. 19/8 <br /><br />
             тел. +7 (812)275-75-75
           </p>
-          <a href="#" class="text-us-form">НАПИШИТЕ НАМ</a>
+          <a href="#" class="button">НАПИШИТЕ НАМ</a>
         </section>
       </div>
 
@@ -251,48 +259,51 @@
       </div>
     </footer>
     <!-- drop out window onclick "text-us-form button"  -->
-    <form action="#" class="drop-out-text-us-form">
-      <h3>Напишите нам</h3>
-      <p>
-        <label for="user-name">Ваше имя:</label><br />
-        <input
-          type="text"
-          name="user_name"
-          id="user-name"
-          placeholder="Имя Фамилия"
-          pattern="[А-Яа-яЁё]+\s[А-Яа-яЁё]+"
-          required
-        />
-      </p>
-      <p>
-        <label for="user-email">Ваш e-mail:</label><br />
-        <input
-          type="email"
-          name="user_email"
-          id="user-email"
-          placeholder="email@example.com"
-          pattern="[A-Za-z]+\@[a-zA-Z]+\.[com|ru]+"
-          required
-        />
-      </p>
-      <p>
-        <label for="user-comment">Текст письма:</label><br />
-        <textarea
-          name="user_comment"
-          id="user-comment"
-          cols="30"
-          rows="7"
-          placeholder="В свободной форме"
-        ></textarea>
-      </p>
+    <div class="index-drop-window">
+      <form action="#" class="feedback-form">
+        <h3>Напишите нам</h3>
+        <p>
+          <label for="user-name">Ваше имя:</label><br />
+          <input
+            type="text"
+            name="user_name"
+            id="user-name"
+            placeholder="Имя Фамилия"
+            pattern="[А-Яа-яЁё]+\s[А-Яа-яЁё]+"
+            required
+          />
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label><br />
+          <input
+            type="email"
+            name="user_email"
+            id="user-email"
+            placeholder="email@example.com"
+            pattern="[A-Za-z]+\@[a-zA-Z]+\.[com|ru]+"
+            required
+          />
+        </p>
+        <p>
+          <label for="user-comment">Текст письма:</label><br />
+          <textarea
+            name="user_comment"
+            id="user-comment"
+            cols="30"
+            rows="7"
+            placeholder="В свободной форме"
+          ></textarea>
+        </p>
 
-      <input type="submit" value="Отправить" />
-    </form>
+        <input type="submit" class="button" value="Отправить" />
+      </form>
 
-    <input
-      type="image"
-      src="../Nerds.web/img/index_img/close-cross.png"
-      alt="выход"
-    />
+      <input
+        class="close-cross"
+        type="image"
+        src="../Nerds.web/img/index_img/index__img_svg/close-cross.svg"
+        alt="выход"
+      />
+    </div>
   </body>
 </html>

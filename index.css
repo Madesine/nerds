@@ -153,6 +153,12 @@ main {
   position: absolute;
 }
 
+.carousel-paragraph{
+	margin: 0;
+	padding: 0;
+	margin-top: 80px;
+}
+
 .carousel-paragraph span {
   display: block;
   margin-bottom: 20px;
@@ -245,6 +251,8 @@ main {
 }
 
 .about-us-paragraph {
+	margin-top: 40px;
+
   width: 700px;
 }
 

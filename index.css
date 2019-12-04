@@ -169,9 +169,12 @@ main {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+	justify-content: space-evenly;
+	
+	position: relative;
 
-  width: 1160px;
+	width: 1160px;
+	box-sizing: border-box;
 
   background-image: url(../Nerds.web/img/index_img/slide1.png);
   background-repeat: no-repeat;
@@ -179,14 +182,19 @@ main {
 }
 
 .carousel .radio-container {
-  align-self: center;
-  position: absolute;
+	align-self: center;
+	
+	position: absolute;
+	right: 540px;
+	bottom: 75px;
 }
 
 .carousel-paragraph{
 	margin: 0;
 	padding: 0;
-	margin-top: 80px;
+	margin-top: 45px;
+
+	display: block;
 }
 
 .carousel-paragraph span {
@@ -202,28 +210,43 @@ main {
 }
 
 .carousel-button {
-  margin-top: 40px;
+	margin-top: 40px;
 
   min-width: 240px;
+}
+
+.carousel-button a{
+	padding: 15px 55px;
+	
+	display: inline-block;
 }
 
 .order-sheet {
   margin: 0 auto;
   margin-bottom: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   padding-right: 60px;
 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  width: 1160px;
+	width: 1160px;
+	box-sizing: border-box;
 
   border-bottom: 2px solid #eeeeee;
 }
 
 .order-sheet article {
-  width: 300px;
+	padding-bottom: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	width: 300px;
+	min-height: 350px;
 }
 
 .order-sheet h2 {
@@ -238,6 +261,19 @@ main {
   text-transform: uppercase;
 
   color: black;
+}
+
+.order-sheet p{
+	margin: 0;
+	padding: 0;
+}
+
+.order-website a,
+.order-application a,
+.order-presentation a{
+	padding: 15px 40px;
+
+	display: inline-block;
 }
 
 .order-application a {
@@ -268,25 +304,35 @@ main {
 
 .about-us {
   margin: 0 auto;
-  margin-bottom: 46px;
-  padding-bottom: 75px;
-
-  display: flex;
+	margin-bottom: 30px;
+	padding-bottom: 75px;
+	
+	display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+	justify-content: space-between;
 
-  width: 1160px;
+	width: 1160px;
+	box-sizing: border-box;
 
   border-bottom: 2px solid #eeeeee;
 }
 
 .about-us-paragraph {
+	margin: 0;
+	padding: 0;
 	margin-top: 40px;
+	margin-bottom: 40px;
 
   width: 700px;
 }
 
 .about-us-paragraph span {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+
+	display: block;
+
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 45px;
   font-weight: 500;
@@ -301,8 +347,41 @@ main {
   order: 2;
 }
 
+.about-us-offers-list{
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.about-us-offers-list li{
+	margin-bottom: 32px;
+	padding-left: 30px;
+
+	position: relative;
+}
+
+.about-us-offers-list li::before{
+	content: "";
+
+	position: absolute;
+	top: 40%;
+	left: 0;
+
+	width: 25px;
+	height: 2px;
+
+	background-color: #fb565a;
+}
+
+.about-us img{
+	margin-bottom: 38px;
+}
+
 .about-us-advantages {
-  width: 380px;
+	padding-right: 15px;
+
+  width: 350px;
 
   order: 3;
 }
@@ -318,10 +397,25 @@ main {
 }
 
 .about-us-advantages ul {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
   list-style: none;
 }
 
+.about-us-advantages li{
+	width: 94px;
+}
+
 .about-us-advantages span {
+	margin-bottom: 20px;
+
+	display: block;
+
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 45px;
   font-weight: 700;
@@ -337,7 +431,7 @@ main {
 .projects {
   margin: 0 auto;
   margin-bottom: 80px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 
   width: 1160px;
 
@@ -350,6 +444,25 @@ main {
   justify-content: space-around;
 
   list-style: none;
+}
+
+.projects li:not(:first-child){
+	padding-left: 50px;
+
+	position: relative;
+}
+
+.projects li:not(:first-child)::before{
+	content: " ";
+
+	position: absolute;
+	left: 0;
+	top: 20px;
+
+	width: 2px;
+	height: 52px;
+
+	background-color: #eeeeee;
 }
 
 .projects a {
@@ -401,7 +514,12 @@ main {
 }
 
 .feedback {
-  margin-right: auto;
+	margin-right: auto;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
   width: 320px;
   height: 310px;
@@ -410,10 +528,16 @@ main {
 }
 
 .feedback p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 37px;
+
   line-height: 18px;
 }
 
-.feedback-heading {
+.feedback .feedback-heading {
+	margin-bottom: 27px;
+
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -422,6 +546,12 @@ main {
   text-transform: uppercase;
 
   color: black;
+}
+
+.feedback a{
+	display: inline-block;
+
+	padding: 15px 45px;
 }
 
 .index-drop-window {

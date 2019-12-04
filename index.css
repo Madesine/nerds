@@ -12,6 +12,11 @@ body {
   background-color: #eeeeee;
 }
 
+img{
+	max-width: 100%;
+	height: auto;
+}
+
 .visually-hidden {
   margin: -1px;
 
@@ -88,13 +93,16 @@ body {
 
 .header-navigation ul {
   margin: 0;
-  padding: 0;
+	padding: 0;
+	
+	display: flex;
+	flex-wrap: wrap;
 
   list-style: none;
 }
 
-.cart {
-  min-width: 160px;
+.header-navigation li{
+	margin-right: 50px;
 }
 
 .header-navigation a,
@@ -108,6 +116,25 @@ body {
   text-transform: uppercase;
 
   color: black;
+}
+
+.cart a{
+	position: relative;
+	padding-left: 50px;
+}
+
+.cart a::before{
+	content: "";
+
+	position: absolute;
+	top: 3px;
+	left: 15px;
+	width: 15px;
+	height: 15px;
+
+	background-image: url(../Nerds.web/img/index_img/index__img_svg/cart-icon.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .header-navigation a:hover,
@@ -348,7 +375,7 @@ main {
 .map {
   background-color: #eeeeee;
   background-image: url(./img/index_img/map.jpg);
-  background-size: 1600px 100%;
+	background-size: 1600px 100%;
   background-repeat: no-repeat;
   background-position: center 0;
 }

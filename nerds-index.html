@@ -70,8 +70,8 @@
               id="slide-carousel-one"
               value="slide_one"
               checked
-						/>
-						<div class="custom-radio"></div>
+            />
+            <div class="custom-radio"></div>
             <label for="slide-carousel-one" class="visually-hidden"
               >Первый слайд</label
             >
@@ -81,8 +81,8 @@
               name="slide-carousel"
               id="slide-carousel-two"
               value="slide_two"
-						/>
-						<div class="custom-radio"></div>
+            />
+            <div class="custom-radio"></div>
             <label for="slide-carousel-two" class="visually-hidden"
               >Второй слайд</label
             >
@@ -92,8 +92,8 @@
               name="slide-carousel"
               id="slide-carousel-three"
               value="slide_three"
-						/>
-						<div class="custom-radio"></div>
+            />
+            <div class="custom-radio"></div>
             <label for="slide-carousel-three" class="visually-hidden"
               >Третий слайд</label
             >
@@ -320,10 +320,10 @@
       </div>
     </footer>
     <!-- drop out window onclick "text-us-form button"  -->
-    <!-- <div class="index-drop-window">
+    <section class="feedback-modal">
+      <h3>Напишите нам</h3>
       <form action="#" class="feedback-form">
-        <h3>Напишите нам</h3>
-        <p>
+        <p class="user-paragraph">
           <label for="user-name">Ваше имя:</label><br />
           <input
             type="text"
@@ -331,10 +331,9 @@
             id="user-name"
             placeholder="Имя Фамилия"
             pattern="[А-Яа-яЁё]+\s[А-Яа-яЁё]+"
-            required
           />
         </p>
-        <p>
+        <p class="email-paragraph">
           <label for="user-email">Ваш e-mail:</label><br />
           <input
             type="email"
@@ -342,10 +341,9 @@
             id="user-email"
             placeholder="email@example.com"
             pattern="[A-Za-z]+\@[a-zA-Z]+\.[com|ru]+"
-            required
           />
         </p>
-        <p>
+        <p class="textarea-paragraph">
           <label for="user-comment">Текст письма:</label><br />
           <textarea
             name="user_comment"
@@ -359,12 +357,15 @@
         <input type="submit" class="button" value="Отправить" />
       </form>
 
-      <input
+      <button type="button" class="close-cross" id="modal-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <!-- <input
         class="close-cross"
         type="image"
         src="../Nerds.web/img/index_img/index__img_svg/close-cross.svg"
         alt="выход"
-      />
-    </div> -->
+      /> -->
+    </section>
   </body>
 </html>

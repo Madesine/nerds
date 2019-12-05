@@ -51,9 +51,13 @@ img {
 
 .button:active {
   background-color: #d7373b;
-	color: rgba(255, 255, 255, 0.3);
-	
-	box-shadow: inset 0 3px rgba(0, 0, 0, .1);
+  color: rgba(255, 255, 255, 0.3);
+
+  box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="radio"]:focus + .custom-radio::before{
+	outline: -webkit-focus-ring-color auto 1px;
 }
 
 .main-header {
@@ -184,11 +188,84 @@ main {
 }
 
 .carousel .radio-container {
-  align-self: center;
+	align-self: center;
+
+	display: flex;
+	justify-content: space-between;
 
   position: absolute;
-  right: 540px;
-  bottom: 75px;
+  right: 500px;
+	bottom: 75px;
+	
+	width: 90px;
+	height: 20px;
+}
+
+.radio-container input[type="radio"] {
+	height: 18px;
+	width: 18px;
+
+  opacity: 0;
+
+	position: relative;
+	z-index: 1;
+}
+
+.radio-container input[type="radio"] + .custom-radio::before {
+	content: "";
+
+	position: absolute;
+	
+	display: inline-block;
+
+  height: 18px;
+	width: 18px;
+	
+	border-radius: 50%;
+
+  background-color: #fff;
+}
+
+.radio-container input[type="radio"] + .custom-radio:first-of-type::before {
+	top: 0;
+	left: 0;
+}
+
+.radio-container input[type="radio"] + .custom-radio:nth-of-type(2)::before {
+	top: 0;
+	left: 32px;
+}
+
+.radio-container input[type="radio"] + .custom-radio:nth-of-type(3)::before {
+	top: 0;
+	left: 65px;
+}
+
+.radio-container input[type="radio"]:checked + .custom-radio::after{
+	content: "";
+
+	position: absolute;
+	
+	width: 4px;
+	height: 4px;
+
+	border: 2px solid #c1c1c1;
+	border-radius: 50%;
+}
+
+.radio-container input[type="radio"] + .custom-radio:first-of-type::after {
+	top: 5px;
+	left: 5px;
+}
+
+.radio-container input[type="radio"] + .custom-radio:nth-of-type(2)::after {
+	top: 5px;
+	left: 37px;
+}
+
+.radio-container input[type="radio"] + .custom-radio:nth-of-type(3)::after {
+	top: 5px;
+	left: 70px;
 }
 
 .carousel-paragraph {
@@ -602,11 +679,11 @@ main {
 }
 
 .social-footer a:active {
-	box-shadow: inset 0 3px rgba(0, 0, 0, .1);
+  box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
 
   background-color: #d7373b;
-	color: rgba(255, 255, 255, 0.3);
-	
+  color: rgba(255, 255, 255, 0.3);
+
   fill-opacity: 0.3;
 }
 

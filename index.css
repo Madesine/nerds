@@ -713,6 +713,8 @@ main {
   margin-left: -480px;
   padding: 70px 100px 85px;
 
+  display: none;
+
   position: fixed;
   bottom: 180px;
   left: 50%;
@@ -736,20 +738,20 @@ main {
 }
 
 .feedback-form {
-	margin-top: 45px;
+  margin-top: 45px;
 
   display: flex;
   flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: space-between;
+  justify-content: space-between;
+  align-content: space-between;
 
-	width: 100%;
-	min-height: 356px;
+  width: 100%;
+  min-height: 356px;
 }
 
-.feedback-form p{
-	margin: 0;
-	padding: 0;
+.feedback-form p {
+  margin: 0;
+  padding: 0;
 }
 
 .feedback-form .user-paragraph,
@@ -772,15 +774,15 @@ main {
 .feedback-form input,
 .feedback-form textarea {
   margin: 0;
-	padding: 0;
-	padding: 14px 14px;
-	margin-top: 10px;
+  padding: 0;
+  padding: 14px 14px;
+  margin-top: 10px;
 
-	width: 360px;
-	height: 50px;
+  width: 360px;
+  height: 50px;
   box-sizing: border-box;
 
-	border: 2px solid #d7dcde;
+  border: 2px solid #d7dcde;
 
   font: inherit;
   line-height: 18px;
@@ -794,49 +796,50 @@ main {
 .feedback-form input[type="submit"] {
   padding: 18px 85px;
 
-	display: block;
-	
-	width: fit-content;
-	height: fit-content;
+  display: block;
+
+  width: fit-content;
+  height: fit-content;
 
   border: none;
 }
 
 .feedback-modal .close-cross {
-	position: absolute;
-	top: 80px;
-	right: 90px;
+  position: absolute;
+  top: 80px;
+  right: 90px;
 
-	width: 21px;
-	height: 21px;
+  width: 21px;
+  height: 21px;
 
-	border: none;
+  border: none;
 
-	background-color: transparent;
-
+  background-color: transparent;
   opacity: 0.3;
+
+  cursor: pointer;
 }
 
 .feedback-modal .close-cross::before,
-.feedback-modal .close-cross::after{
-	content: " ";
+.feedback-modal .close-cross::after {
+  content: " ";
 
-	position: absolute;
-	top: 9px;
-	left: 1px;
+  position: absolute;
+  top: 9px;
+  left: 1px;
 
-	width: 19px;
-	height: 3px;
+  width: 19px;
+  height: 3px;
 
-	background-color: #fb565a;
+  background-color: #fb565a;
 }
 
-.feedback-modal .close-cross::before{
-	transform: rotate(45deg);
+.feedback-modal .close-cross::before {
+  transform: rotate(45deg);
 }
 
-.feedback-modal .close-cross::after{
-	transform: rotate(-45deg);
+.feedback-modal .close-cross::after {
+  transform: rotate(-45deg);
 }
 
 .feedback-modal .close-cross:focus,
@@ -897,18 +900,21 @@ main {
 }
 
 .feedback-form input:invalid {
-	color: #e74246;
-	border-color: #e74246;
+  color: #e74246;
+  border-color: #e74246;
 }
 
 .feedback-form input:not([type="submit"]):hover,
-.feedback-form textarea:hover{
-	border-color: #b4b9bb;
+.feedback-form textarea:hover {
+  border-color: #b4b9bb;
 }
 
 .feedback-form input:not([type="submit"]):focus,
-.feedback-form textarea:focus{
-	border-color: #000;
-	outline: none;
+.feedback-form textarea:focus {
+  border-color: #000;
+  outline: none;
 }
 
+.modal-show {
+  display: block;
+}

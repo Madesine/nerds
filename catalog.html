@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Интернет-магазин дизан-студии NЁRDS" />
+    <meta
+      name="keywords"
+      content="дизайн, студия, веб-сайты, приложения, презентации, Краснодар, разработка, магазин, NЁRDS"
+    />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/catalog.css" />
+    <title>Магазин NЁRDS</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="header-logo">
+          <a href="index.html" aria-label="Лого">
+            <img
+              src="./img/index_img/index__img_svg/nerds-logo.svg"
+              alt="Лого 'Nerds' "
+            />
+          </a>
+        </div>
+        <nav class="header-navigation">
+          <ul>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li>
+              <a href="catalog.html" class="on-page">
+                Магазин
+              </a>
+            </li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="cart">
+          <ul>
+            <li>
+              <a href="#">
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </div>
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+    </header>
+
+    <main>
+      <form action="#" oninput="to_range.value=cost.value" class="filter">
+        <div class="price-in-range">
+          <h3>Стоимость:</h3>
+          <input
+            type="range"
+            name="cost"
+            id="cost"
+            min="0"
+            max="20000"
+            step="100"
+          />
+          <p>
+            <label for="from-range">От</label>
+            <output name="from_range" id="from-range">0</output>
+
+            <label for="to-range">До</label>
+            <output name="to_range" id="to-range"></output>
+          </p>
+        </div>
+
+        <div class="choose-grid">
+          <h3>Сетка:</h3>
+          <p>
+            <input
+              type="radio"
+              name="grid"
+              id="grid-adaptive"
+              value="adaptive"
+              checked
+            />
+            <label for="grid-adaptive">Адаптивная</label>
+          </p>
+          <p>
+            <input type="radio" name="grid" id="grid-fix" value="fix" />
+            <label for="grid-fix">Фиксированная</label>
+          </p>
+          <p>
+            <input type="radio" name="grid" id="grid-rubber" value="rubber" />
+            <label for="grid-rubber">Резиновая</label>
+          </p>
+        </div>
+
+        <div class="features">
+          <h3>Особенности:</h3>
+          <p>
+            <input type="checkbox" name="slider" id="features-slider" />
+            <label for="features-slider">Слайдер</label>
+          </p>
+          <p>
+            <input type="checkbox" name="block" id="features-block" />
+            <label for="features-block">Блок преимуществ</label>
+          </p>
+          <p>
+            <input type="checkbox" name="news" id="features-news" />
+            <label for="features-news">Новости</label>
+          </p>
+          <p>
+            <input type="checkbox" name="gallery" id="features-gallery" />
+            <label for="features-gallery">Галерея</label>
+          </p>
+          <p>
+            <input type="checkbox" name="basket" id="features-basket" />
+            <label for="features-basket">Корзина</label>
+          </p>
+        </div>
+
+        <input type="submit" class="filter-button button" value="Показать" />
+      </form>
+
+      <div class="main-flex-wrapper">
+        <div class="choose-sort">
+          <h2>Сортировать:</h2>
+          <ul>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
+            <li>
+              <a href="#" class="less-to-more current" aria-label="Вниз"
+                ><img src="./img/catalog_img/icon-down-dir.png" alt="Вниз"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="more-to-less" aria-label="Вверх"
+                ><img src="./img/catalog_img/icon-down-dir.png" alt="Вверх"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <section class="products">
+          <h2 class="visually-hidden">Товары в нашем магазине</h2>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет Sedona</h3>
+            <img
+              src="./img/catalog_img/img-sedona.jpg"
+              alt="Макет Sedona"
+              class="template-img"
+            />
+            <img
+              class="browser-img"
+              src="./img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+
+            <div class="product-item-hover">
+              <h4>SEDONA</h4>
+              <p>Информационный сайт для туристов</p>
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет Pink App</h3>
+            <img
+              src="./img/catalog_img/img-pink.jpg"
+              alt="Макет Pink App"
+              class="template-img"
+            />
+            <img
+              class="browser-img"
+              src="./img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+
+            <div class="product-item-hover">
+              <h4>PINK APP</h4>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет Barbershop Borodonski</h3>
+            <img
+              src="./img/catalog_img/img-barbershop.jpg"
+              alt="Макет Barbershop Borodonski"
+              class="template-img"
+            />
+            <img
+              class="browser-img"
+              src="./img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+
+            <div class="product-item-hover">
+              <h4>BARBERSHOP</h4>
+              <p>Сайт салоны красоты. Для мужчин, да.</p>
+
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет Mishka</h3>
+            <img
+              src="./img/catalog_img/img-mishka.jpg"
+              alt="Макет Mishka"
+              class="template-img"
+            />
+            <img
+              class="browser-img"
+              src="./img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+
+            <div class="product-item-hover">
+              <h4>MISHKA</h4>
+              <p>Интернет-магазин вязаных игрушек</p>
+
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет A Plus</h3>
+            <img
+              src="./img/catalog_img/img-aplus.jpg"
+              alt="Макет A Plus"
+              class="template-img"
+            />
+            <img
+              class="browser-img"
+              src="./img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+
+            <div class="product-item-hover">
+              <h4>A PLUS</h4>
+              <p>Лендинг курсов повышения квалификации</p>
+
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <h3 class="visually-hidden">Макет кваст</h3>
+            <img
+              src="./img/catalog_img/img-kvast.jpg"
+              alt="Макет кваст"
+              class="template-img"
+            />
+            <img
+              class="browser-img"
+              src="./img/catalog_img/catalog__img_svg/browser.svg"
+              alt="Хэдер браузера"
+            />
+            <div class="product-item-hover">
+              <h4>КВАСТ</h4>
+              <p>Промо-сайт производителя крафтового кваса</p>
+
+              <a href="#" aria-label="Цена" class="button">9900 РУБ.</a>
+            </div>
+          </article>
+        </section>
+
+        <nav class="pagination">
+          <ol>
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">Следующая</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="map">
+        <div class="map-content">
+          <img
+            class="map-marker"
+            src="./img/index_img/map-marker.png"
+            alt="ул. Б. Конюшенная, д. 19/8"
+          />
+
+          <section class="feedback">
+            <h3 class="visually-hidden">Контактная информация</h3>
+            <p class="feedback-heading">NЁRDS DESIGN STUDIO</p>
+            <p>
+              191186, Санкт-Петербург,<br />
+              ул. Б. Конюшенная, д. 19/8 <br /><br />
+              тел. +7 (812)275-75-75
+            </p>
+            <a href="" class="button feedback-link">НАПИШИТЕ НАМ</a>
+          </section>
+        </div>
+      </div>
+
+      <div class="social-footer">
+        <ul>
+          <li>
+            <a href="#" aria-label="Мы в соц. сетях: Vkontakte"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="15"
+                viewBox="0 0 26 15"
+              >
+                <path
+                  fill="#FFF"
+                  d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Мы в соц. сетях: Facebook"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="22"
+                viewBox="0 0 12 22"
+              >
+                <path
+                  fill="#FFF"
+                  d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Мы в соц. сетях: Instagramm"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <path
+                  fill="#FFF"
+                  d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p>
+          <span>Давайте дружить, это выгодно!</span><br />Скидка 10% для друзей
+          из социальных сетей.
+        </p>
+      </div>
+    </footer>
+
+    <section class="feedback-modal">
+      <h3>Напишите нам</h3>
+      <form action="#" class="feedback-form">
+        <p class="user-paragraph">
+          <label for="user-name">Ваше имя:</label><br />
+          <input
+            type="text"
+            name="user_name"
+            id="user-name"
+            placeholder="Имя Фамилия"
+            pattern="[А-Яа-яЁё]+\s[А-Яа-яЁё]+"
+          />
+        </p>
+        <p class="email-paragraph">
+          <label for="user-email">Ваш e-mail:</label><br />
+          <input
+            type="email"
+            name="user_email"
+            id="user-email"
+            placeholder="email@example.com"
+            pattern="[A-Za-z]+\@[a-zA-Z]+\.[com|ru]+"
+          />
+        </p>
+        <p class="textarea-paragraph">
+          <label for="user-comment">Текст письма:</label><br />
+          <textarea
+            name="user_comment"
+            id="user-comment"
+            cols="30"
+            rows="7"
+            placeholder="В свободной форме"
+          ></textarea>
+        </p>
+
+        <input type="submit" class="button" value="Отправить" />
+      </form>
+
+      <button type="button" class="close-cross" id="modal-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

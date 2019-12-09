@@ -83,7 +83,7 @@ input[type="radio"]:focus + .custom-radio::before {
   width: 1160px;
 }
 
-.header-logo a {
+.header-logo img {
   width: 160px;
   height: 65px;
 }
@@ -101,7 +101,8 @@ input[type="radio"]:focus + .custom-radio::before {
   width: 600px;
 }
 
-.header-navigation ul {
+.header-navigation ul,
+.cart ul {
   margin: 0;
   padding: 0;
 
@@ -144,7 +145,7 @@ input[type="radio"]:focus + .custom-radio::before {
   width: 15px;
   height: 15px;
 
-  background-image: url(../Nerds.web/img/index_img/index__img_svg/cart-icon.svg);
+  background-image: url(../img/index_img/index__img_svg/cart-icon.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -188,7 +189,7 @@ main {
   width: 1160px;
   box-sizing: border-box;
 
-  background-image: url(../Nerds.web/img/index_img/slide1.png);
+  background-image: url(../img/index_img/slide1.png);
   background-repeat: no-repeat;
   background-position-x: right;
 }
@@ -539,7 +540,7 @@ main {
 }
 
 .projects li:not(:first-child)::before {
-  content: " ";
+  content: "";
 
   position: absolute;
   left: 0;
@@ -573,7 +574,7 @@ main {
 
 .map {
   background-color: #eeeeee;
-  background-image: url(./img/index_img/map.jpg);
+  background-image: url(../img/index_img/map.jpg);
   background-size: 1600px 100%;
   background-repeat: no-repeat;
   background-position: center 0;
@@ -665,15 +666,13 @@ main {
 }
 
 .social-footer a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 78px;
   height: 78px;
   box-sizing: border-box;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   border-radius: 50%;
 
@@ -822,7 +821,7 @@ main {
 
 .feedback-modal .close-cross::before,
 .feedback-modal .close-cross::after {
-  content: " ";
+  content: "";
 
   position: absolute;
   top: 9px;

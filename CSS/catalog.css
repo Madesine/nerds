@@ -31,29 +31,30 @@ img {
   overflow: hidden;
 }
 
-.on-page{
-	padding-bottom: 10px;
+.on-page {
+  padding-bottom: 10px;
 
-	position: relative;
+  position: relative;
 }
 
-.on-page::after{
-	content: " ";
+.on-page::after {
+  content: "";
 
-	padding-right: 100%;	
+  padding-right: 100%;
 
-	position: absolute;
-	bottom: 0;
-	left: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 
-	height: 2px;
-	
+  height: 2px;
 
-	background-color: #e74246;
+  background-color: #e74246;
 }
 
 .button {
   border: none;
+
+  padding: 18px 62px;
 
   font-family: "Roboto", Helvetica, sans-serif;
   font-weight: 500;
@@ -85,6 +86,8 @@ input[type="radio"]:focus + .custom-radio::before {
 }
 
 .filter-button {
+  padding: 18px 89px;
+
   color: #000;
   background-color: #eeeeee;
 }
@@ -119,6 +122,11 @@ input[type="radio"]:focus + .custom-radio::before {
   min-height: 355px;
 }
 
+.header-logo img{
+	width:160px;
+	height:65px;
+}
+
 .header-logo:hover,
 .header-logo:focus {
   opacity: 0.8;
@@ -132,7 +140,8 @@ input[type="radio"]:focus + .custom-radio::before {
   width: 600px;
 }
 
-.header-navigation ul {
+.header-navigation ul,
+.cart ul {
   margin: 0;
   padding: 0;
 
@@ -173,16 +182,14 @@ input[type="radio"]:focus + .custom-radio::before {
   width: 15px;
   height: 15px;
 
-  background-image: url(../Nerds.web/img/index_img/index__img_svg/cart-icon.svg);
+  background-image: url(../img/index_img/index__img_svg/cart-icon.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .main-header h1 {
-  margin: 0;
-  padding: 0;
-
   margin: 0 auto;
+  padding: 0;
 
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 55px;
@@ -219,6 +226,9 @@ main {
 }
 
 .filter h2 {
+  margin: 0;
+  padding: 0;
+
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -243,10 +253,24 @@ main {
   margin: 0;
   padding: 0;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 760px;
 }
 
+.choose-sort {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
 .choose-sort h2 {
+  margin: 0;
+  padding: 0;
+
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -257,6 +281,11 @@ main {
 }
 
 .choose-sort ul {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
   list-style: none;
 }
 
@@ -279,19 +308,60 @@ main {
   opacity: 1;
 }
 
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.product-item {
+  margin-bottom: 33px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  width: 360px;
+}
+
 .browser-img {
+  order: -1;
+
   opacity: 0.12;
 }
 
-.browser-img:hover {
+.template-img:hover + .browser-img {
   opacity: 1;
 }
 
 .product-item-hover {
+  display: none;
+
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  min-height: 230px;
+
   background-color: #eeeeee;
 }
 
+.template-img:hover ~ .product-item-hover {
+  display: flex;
+}
+
 .product-item-hover h4 {
+  margin: 0;
+  padding: 0;
+
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -300,6 +370,18 @@ main {
   text-transform: uppercase;
 
   color: black;
+}
+
+.product-item-hover p {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination ol{
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
 }
 
 .pagination a {
@@ -330,7 +412,7 @@ main {
 
 .map {
   background-color: #eeeeee;
-  background-image: url(./img/index_img/map.jpg);
+  background-image: url(../img/index_img/map.jpg);
   background-size: 1600px 100%;
   background-repeat: no-repeat;
   background-position: center 0;
@@ -422,15 +504,13 @@ main {
 }
 
 .social-footer a {
-  display: block;
-
+	display: flex;
+  justify-content: center;
+	align-items: center;
+	
   width: 78px;
   height: 78px;
   box-sizing: border-box;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   border-radius: 50%;
 
@@ -579,7 +659,7 @@ main {
 
 .feedback-modal .close-cross::before,
 .feedback-modal .close-cross::after {
-  content: " ";
+  content: "";
 
   position: absolute;
   top: 9px;

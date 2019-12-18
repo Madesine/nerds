@@ -60,9 +60,9 @@ img {
   line-height: 18px;
 
   text-decoration: none;
-	text-transform: uppercase;
-	
-	border: none;
+  text-transform: uppercase;
+
+  border: none;
 
   cursor: pointer;
 
@@ -76,16 +76,12 @@ img {
 }
 
 .button:active {
-outline: none;
+  outline: none;
 
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 
   box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
-}
-
-.button:visited{
-	background-color: #fb565a;
 }
 
 input[type="radio"]:focus + .custom-radio::before {
@@ -106,10 +102,6 @@ input[type="radio"]:focus + .custom-radio::before {
 
 .filter-button:active {
   background-color: #d5d5d5;
-}
-
-.filter-button:visited{
-	background-color: #eeeeee;
 }
 
 .main-header {
@@ -146,8 +138,8 @@ input[type="radio"]:focus + .custom-radio::before {
   opacity: 0.3;
 }
 
-.header-logo{
-	opacity: 1;
+.header-logo {
+  opacity: 1;
 }
 
 .header-navigation {
@@ -232,7 +224,7 @@ main {
   display: flex;
   justify-content: space-between;
 
-	width: 1160px;
+  width: 1160px;
 }
 
 .filter {
@@ -440,61 +432,61 @@ main {
 
 .pagination ol {
   margin: 0;
-	padding: 0;
+  padding: 0;
 
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 
-	min-height: 55px;
+  min-height: 55px;
 
   list-style: none;
 }
 
-.pagination li{
-	margin: 0;
-	padding: 0;
-	margin-right: 10px;
+.pagination li {
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
 }
 
 .pagination a {
-	margin: 0;
-	padding: 13px 17px;
+  margin: 0;
+  padding: 13px 17px;
 
   font: inherit;
   font-family: "Roboto", Helvetica, sans-serif;
   font-weight: 500;
 
-	text-decoration: none;
-	
-	border: 3px solid #eeeeee;
-	border-radius: 3px;
+  text-decoration: none;
+
+  border: 3px solid #eeeeee;
+  border-radius: 3px;
 
   color: #000;
   background-color: #eeeeee;
 }
 
-.pagination .next-page{
-	padding-right: 80px;
-	padding-left: 80px;
+.pagination .next-page {
+  padding-right: 80px;
+  padding-left: 80px;
 }
 
 .pagination a:hover,
 .pagination a:focus {
-	background-color: #dfdfdf;
-	border-color: #dfdfdf ;
+  background-color: #dfdfdf;
+  border-color: #dfdfdf;
 }
 
 .pagination a:active {
-	background-color: #d5d5d5;
-	border-color: #d5d5d5;
-	color: rgba(255, 255, 255, 0.3);
-	
-	border-top-color: rgba(0, 0, 0, 0.1);
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
+  color: rgba(255, 255, 255, 0.3);
+
+  border-top-color: rgba(0, 0, 0, 0.1);
 }
 
-.pagination li:first-child a{
-	background-color: transparent;
+.pagination li:first-child a {
+  background-color: transparent;
 }
 
 .main-footer {

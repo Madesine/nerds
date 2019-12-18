@@ -52,8 +52,7 @@ img {
 }
 
 .button {
-  border: none;
-
+  margin: 0;
   padding: 18px 62px;
 
   font-family: "Roboto", Helvetica, sans-serif;
@@ -62,6 +61,8 @@ img {
 
   text-decoration: none;
   text-transform: uppercase;
+
+  border: none;
 
   cursor: pointer;
 
@@ -261,7 +262,7 @@ main {
 }
 
 .choose-sort {
-	margin-bottom: 60px;
+  margin-bottom: 60px;
 
   display: flex;
   justify-content: space-between;
@@ -270,7 +271,7 @@ main {
 }
 
 .choose-sort h2 {
-	margin: 0;
+  margin: 0;
   padding: 0;
 
   font-family: "Roboto", Helvetica, sans-serif;
@@ -284,19 +285,18 @@ main {
 
 .choose-sort ul {
   margin: 0;
-	padding: 0;
+  padding: 0;
 
   display: flex;
 
   list-style: none;
 }
-.choose-sort li{
-	
+.choose-sort li {
 }
 .choose-sort a {
-	margin-right: 28px;
+  margin-right: 28px;
 
-	position: relative;
+  position: relative;
 
   font: inherit;
   font-size: 14px;
@@ -317,33 +317,29 @@ main {
 }
 
 .less-to-more::after,
-.more-to-less::after{
-	content: "";
+.more-to-less::after {
+  content: "";
 
-	position: absolute;
-	right: 0;
-	
-	border: 5px solid transparent;
-	border-bottom: 10px solid black;
+  position: absolute;
+  right: 0;
+
+  border: 5px solid transparent;
+  border-bottom: 10px solid black;
 }
 
-.more-to-less::after{
-	top: 50%;
-	margin-top: -5px;
+.more-to-less::after {
+  top: 50%;
+  margin-top: -5px;
 
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .choose-sort .less-to-more,
-.choose-sort .more-to-less{
-	margin: 0;
-	margin-left: 20px;
-	padding: 0;
+.choose-sort .more-to-less {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
 }
-
-/* .less-to-more img{
-	transform: rotate(180deg);
-} */
 
 .products {
   display: flex;
@@ -375,10 +371,14 @@ main {
 }
 
 .product-item-hover {
+	padding: 0 80px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+
   display: none;
 
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   position: absolute;
@@ -387,6 +387,8 @@ main {
 
   width: 100%;
   min-height: 230px;
+
+  box-sizing: border-box;
 
   background-color: #eeeeee;
 }
@@ -412,6 +414,16 @@ main {
 .product-item-hover p {
   margin: 0;
   padding: 0;
+
+  text-align: center;
+}
+
+.product-item-hover .button {
+  padding: 18px 0;
+
+  width: 100%;
+
+  text-align: center;
 }
 
 .pagination ol {

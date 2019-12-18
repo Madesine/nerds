@@ -58,21 +58,28 @@
       <form action="#" oninput="to_range.value=cost.value" class="filter">
         <div class="price-in-range">
           <h3>Стоимость:</h3>
-          <input
-            type="range"
-            name="cost"
-            id="cost"
-            min="0"
-            max="20000"
-            step="100"
-          />
-          <p>
+          <div class="wrapper">
+            <input
+              type="range"
+              name="cost"
+              id="cost"
+              min="0"
+              max="20000"
+              step="100"
+            />
+          </div>
+
+          <div class="outputs">
             <label for="from-range">От</label>
-            <output name="from_range" id="from-range">0</output>
+            <div class="output-wrapper">
+              <output name="from_range" id="from-range">0</output>
+            </div>
 
             <label for="to-range">До</label>
-            <output name="to_range" id="to-range"></output>
-          </p>
+            <div class="output-wrapper">
+              <output name="to_range" id="to-range"></output>
+            </div>
+          </div>
         </div>
 
         <div class="choose-grid">

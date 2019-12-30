@@ -55,7 +55,11 @@
     </header>
 
     <main>
-      <form action="#" oninput="to-range.value=cost.value" class="filter">
+      <form
+        action="#"
+        oninput="document.getElementById('to-range').value = document.getElementById('cost').value"
+        class="filter"
+      >
         <div class="price-in-range">
           <h3>Стоимость:</h3>
           <div class="wrapper">

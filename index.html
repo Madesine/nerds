@@ -10,12 +10,13 @@
       content="дизайн, студия, веб-сайты, приложения, презентации, Краснодар, разработка"
     />
     <title>NЁRDS DESIGN STUDIO</title>
-    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
   </head>
   <body>
     <header class="main-header">
@@ -52,13 +53,29 @@
 
     <main>
       <div class="carousel">
-        <div class="carousel-container">
-          <p class="carousel-paragraph">
+        <div class="carousel-container toogle-background">
+          <p class="carousel-paragraph slide-one-paragraph slide-show">
             <span
               >Долго, дорого,<br />
               скурпулезно.</span
             ><br />Математически выверенный дизайн<br />
             для вашего сайта или мобильного приложения.
+          </p>
+
+          <p class="carousel-paragraph slide-two-paragraph">
+            <span
+              >Любим математику <br />
+              как никто другой</span
+            ><br />Никакого креатива, только математические формулы <br />
+            для расчета идеальных пропорций.
+          </p>
+
+          <p class="carousel-paragraph slide-three-paragraph">
+            <span
+              >Только ночь, <br />
+              только хардкор</span
+            ><br />Работать днем, как все? Мы против этого. <br />
+            Ближе к полуночи работа только начинается.
           </p>
 
           <div class="carousel-button">
@@ -70,7 +87,7 @@
               type="radio"
               name="slide-carousel"
               id="slide-carousel-one"
-              value="slide_one"
+              value="slide-one"
               checked
             />
             <div class="custom-radio"></div>
@@ -82,7 +99,7 @@
               type="radio"
               name="slide-carousel"
               id="slide-carousel-two"
-              value="slide_two"
+              value="slide-two"
             />
             <div class="custom-radio"></div>
             <label for="slide-carousel-two" class="visually-hidden"
@@ -93,7 +110,7 @@
               type="radio"
               name="slide-carousel"
               id="slide-carousel-three"
-              value="slide_three"
+              value="slide-three"
             />
             <div class="custom-radio"></div>
             <label for="slide-carousel-three" class="visually-hidden"
@@ -318,7 +335,7 @@
           <label for="user-name">Ваше имя:</label><br />
           <input
             type="text"
-            name="user_name"
+            name="user-name"
             id="user-name"
             placeholder="Имя Фамилия"
             pattern="[А-Яа-яЁё]+\s[А-Яа-яЁё]+"
@@ -328,7 +345,7 @@
           <label for="user-email">Ваш e-mail:</label><br />
           <input
             type="email"
-            name="user_email"
+            name="user-email"
             id="user-email"
             placeholder="email@example.com"
             pattern="[A-Za-z]+\@[a-zA-Z]+\.[com|ru]+"
@@ -337,7 +354,7 @@
         <p class="textarea-paragraph">
           <label for="user-comment">Текст письма:</label><br />
           <textarea
-            name="user_comment"
+            name="user-comment"
             id="user-comment"
             cols="30"
             rows="7"
@@ -354,5 +371,6 @@
     </section>
 
     <script src="./js/script.js"></script>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>

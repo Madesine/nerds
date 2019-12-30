@@ -60,6 +60,11 @@ img {
   box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
 }
 
+.toogle-background{
+	transition-property: background-image;
+	transition-duration: 2s;
+}
+
 input[type="radio"]:focus + .custom-radio::before {
   outline: -webkit-focus-ring-color auto 1px;
 }
@@ -189,7 +194,7 @@ main {
   width: 1160px;
   box-sizing: border-box;
 
-  background-image: url(../img/index_img/slide1.png);
+	background-image: url(../img/index_img/slide1.png);
   background-repeat: no-repeat;
   background-position-x: right;
 }
@@ -275,13 +280,16 @@ main {
   top: 5px;
   left: 70px;
 }
+.slide-one-paragraph,
+.slide-two-paragraph,
+.slide-three-paragraph{
+	display: none;
+}
 
 .carousel-paragraph {
   margin: 0;
   padding: 0;
   margin-top: 45px;
-
-  display: block;
 }
 
 .carousel-paragraph span {
@@ -914,6 +922,7 @@ main {
   outline: none;
 }
 
-.modal-show {
+.modal-show,
+.slide-show {
   display: block;
 }

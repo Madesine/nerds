@@ -55,24 +55,35 @@
     </header>
 
     <main>
-      <form action="#" oninput="to_range.value=cost.value" class="filter">
+      <form
+        action="#"
+        oninput="document.getElementById('to-range').value = document.getElementById('cost').value"
+        class="filter"
+      >
         <div class="price-in-range">
           <h3>Стоимость:</h3>
-          <input
-            type="range"
-            name="cost"
-            id="cost"
-            min="0"
-            max="20000"
-            step="100"
-          />
-          <p>
+          <div class="wrapper">
+            <input
+              type="range"
+              name="cost"
+              id="cost"
+              min="0"
+              max="20000"
+              step="100"
+            />
+          </div>
+
+          <div class="outputs">
             <label for="from-range">От</label>
-            <output name="from_range" id="from-range">0</output>
+            <div class="output-wrapper">
+              <output name="from-range" id="from-range">0</output>
+            </div>
 
             <label for="to-range">До</label>
-            <output name="to_range" id="to-range"></output>
-          </p>
+            <div class="output-wrapper">
+              <output name="to-range" id="to-range"></output>
+            </div>
+          </div>
         </div>
 
         <div class="choose-grid">
@@ -84,6 +95,7 @@
               id="grid-adaptive"
               value="adaptive"
               checked
+              disabled
             />
             <label for="grid-adaptive">Адаптивная</label>
           </p>
@@ -100,7 +112,7 @@
         <div class="features">
           <h3>Особенности:</h3>
           <p>
-            <input type="checkbox" name="slider" id="features-slider" />
+            <input type="checkbox" name="slider" id="features-slider" checked />
             <label for="features-slider">Слайдер</label>
           </p>
           <p>
@@ -132,14 +144,10 @@
             <li><a href="#">По типу</a></li>
             <li><a href="#">По названию</a></li>
             <li>
-              <a href="#" class="less-to-more current" aria-label="Вниз"
-                ><img src="./img/catalog_img/icon-down-dir.png" alt="Вниз"
-              /></a>
+              <a href="#" class="less-to-more current" aria-label="Вниз"></a>
             </li>
             <li>
-              <a href="#" class="more-to-less" aria-label="Вверх"
-                ><img src="./img/catalog_img/icon-down-dir.png" alt="Вверх"
-              /></a>
+              <a href="#" class="more-to-less" aria-label="Вверх"></a>
             </li>
           </ul>
         </div>
@@ -284,7 +292,7 @@
               <a href="#">3</a>
             </li>
             <li>
-              <a href="#">Следующая</a>
+              <a href="#" class="next-page">Следующая</a>
             </li>
           </ol>
         </nav>
@@ -375,7 +383,7 @@
           <label for="user-name">Ваше имя:</label><br />
           <input
             type="text"
-            name="user_name"
+            name="user-name"
             id="user-name"
             placeholder="Имя Фамилия"
             pattern="[А-Яа-яЁё]+\s[А-Яа-яЁё]+"
@@ -385,7 +393,7 @@
           <label for="user-email">Ваш e-mail:</label><br />
           <input
             type="email"
-            name="user_email"
+            name="user-email"
             id="user-email"
             placeholder="email@example.com"
             pattern="[A-Za-z]+\@[a-zA-Z]+\.[com|ru]+"
@@ -394,7 +402,7 @@
         <p class="textarea-paragraph">
           <label for="user-comment">Текст письма:</label><br />
           <textarea
-            name="user_comment"
+            name="user-comment"
             id="user-comment"
             cols="30"
             rows="7"
